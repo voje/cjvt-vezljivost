@@ -1,0 +1,14 @@
+version: "3"
+services:
+
+ mongo_db:
+  image: mongo:latest
+  volumes:
+   - mongo_vol:/data/db
+
+ flask_app:
+  # docker stack deploy only works with pre-built images
+  image: flask_app:latest
+
+volumes:
+ mongo_vol:
