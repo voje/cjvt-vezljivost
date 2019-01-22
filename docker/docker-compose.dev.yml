@@ -5,10 +5,25 @@ services:
   image: mongo:latest
   volumes:
    - mongo_vol:/data/db
+  networks:
+   - backend
 
  flask_app:
   # docker stack deploy only works with pre-built images
+  # run: $ docker build /dockerfiles/flask_app
   image: flask_app:latest
+  volumes:
+   - $PWD/..:/app
+  networks:
+   - backend
+   - frontend
+  ports:
+   - 8080:8080
 
 volumes:
  mongo_vol:
+
+networks:
+ backend:
+ frontend:
+

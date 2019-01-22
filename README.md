@@ -5,7 +5,4 @@ Users can add their own senses to sentences, which are used for grouping sentenc
 
 ## Deployment
 We're using Docker. A single node Docker Swarm, to be exact. 
-```bash
-$ docker swarm init
-$ docker stack deploy --compose-file ./docker/devstack.yml devstack
-```
+Check out `./docker/README.md`.

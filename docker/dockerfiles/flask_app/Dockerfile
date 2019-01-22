@@ -1,5 +1,11 @@
-FROM alpine:latest
+FROM ubuntu:latest
 
-# build the app runtime environment in here
+RUN apt-get update
+RUN apt-get install -y \
+python3 \
+python3-pip
+RUN apt-get update
+RUN apt-get upgrade -y
 
-ENTRYPOINT ["echo", "TODO"]
+# dev
+ENTRYPOINT ["sleep", "200"]
