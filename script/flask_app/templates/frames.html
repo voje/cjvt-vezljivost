@@ -1,0 +1,64 @@
+{% for frame in frames %}
+<div class="frame-div">
+    <div hidden class="frame-hw-id">{{ frame.tids[0] }}</div>
+    <div class="frame-table-wrapper">
+        <table class="frame-table">
+            <tr>
+            {% for slot in frame.slots %}
+                <td><span class="functor-link {{ slot.tids|join(' ') }}">{{ slot.functor }}</span></td>
+            {% endfor %}
+            </tr>
+            <tr>
+            {% for slot in frame.slots %}
+                <td title="št. pojavitev/št. povedi">{{ slot.tids|length }}/{{ frame.tids|length }}</td>
+            {% endfor %}
+            </tr>
+        </table>
+
+        <table class="frame-sense">
+            <tr class="frame-sense-id">
+                <td>ID pomena: </td>
+                <td>
+                    <input type="text" name="sense_id" value="{{ frame.sense_info.get('sense_id') }}">
+                </td>
+            </tr>
+            <tr class="frame-sense-desc">
+                <td>Opis pomena: </td>
+                <td>
+                    <!--input type="text" name="sense_desc" value="{{ frame.sense_info.get('sense_desc') }}"-->
+                    <ul>
+                    {% set desc_arr = frame.sense_info.get('sense_desc') %}
+                    {% if desc_arr is not none %}
+                        {% for desc in desc_arr %}
+                            <li>{{ desc }}</li>
+                        {% endfor %}
+                    {% endif %}
+                    </ul>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="frame-sentences-wrapper">
+        <p><a class="monospace sign-element" href="javascript:void(0)" onClick="toggle_frame_sentences($(this))">[+]</a> št. stavkov: {{ frame.tids|length }}</p>
+        <div hidden class="frame-sentences">
+        <table>
+        {% for sentence in frame.sentences %}
+            <tr><td>
+            {% for token in sentence %}
+                {% if token[1]["word"] != None %}
+                    {% set hwclass = "" %}
+                    {% if token[0] in frame.tids %}
+                        {% set hwclass = " hw-highlight" %}
+                    {% endif %}
+                        <span class="functor-link {{ token[0] }}{{ hwclass }}">{{ token[1]["word"] }} </span>
+                {% endif %}
+            {% endfor %}
+            </td></tr>
+        {% endfor %}
+        </table>
+        </div>
+        <hr />
+    </div>
+</div>
+{% endfor %}

@@ -1,0 +1,6 @@
+
+            {% set alphabet = ["A", "B", "C", "Č", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "R", "S", "Š", "T", "U", "V", "Z", "Ž"] %}
+            {% for i in range(0, alphabet|length - 1) %}
+                <span><a href="javascript:get_words('{{ alphabet[i] }}')">{{ alphabet[i] }}</a>, </span>
+            {% endfor %}
+            <a href="javascript:get_words('{{ alphabet[-1] }}')">{{ alphabet[-1] }}</a>

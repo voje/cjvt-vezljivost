@@ -1,0 +1,40 @@
+{% for frame in frames %}
+<div class="frame-div">
+    <p>[{% for tid in frame.tids %}
+        <a href="javascript:void(0)" onClick="get_token_info('{{ tid }}', this)">{{ tid }}</a>
+        {% if not loop.last %} 
+            , 
+        {% endif %}
+    {% endfor %}]</p>
+
+    <table class="frame-table">
+        <tr>
+        {% for slot in frame.slots %}
+            <td class="{{ slot.tids|join(" ") }}">{{ slot.functor }}</td>
+        {% endfor %}
+        </tr>
+        <tr>
+        {% for slot in frame.slots %}
+            <td>{% for sh in slot.shallows %}
+                {{ sh }}
+                {% if not loop.last %}
+                    , 
+                {% endif %}
+            {% endfor %}</td>
+        {% endfor %}
+        </tr>
+        <tr>
+        {% for slot in frame.slots %}
+            <td>{% for tid in slot.tids %}
+                <a href="javascript:void(0)" onClick="get_token_info('{{ tid }}', this)">{{ tid }}</a>
+                {% if not loop.last %} 
+                    , 
+                {% endif %}
+            {% endfor %}</td>
+        {% endfor %}
+        </tr>
+    </table>
+    <div class="token-div"></div>
+    <hr />
+</div>
+{% endfor %}

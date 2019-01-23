@@ -1,0 +1,201 @@
+Loaded vallex_data.pickle.
+Loaded pickled_senses.pickle.
+vallex.process_after_read(): 1.90s
+
+Test frame: ['S5450.t13'].
+{'lemma': 'cviliti', 'word': 'cvili', 'msd': 'Ggnste'}
+{'lemma': 'ves', 'word': 'vse', 'msd': 'Zc-sei'}
+{'lemma': 'slušalka', 'word': 'slušalki', 'msd': 'Sozem'}
+{'lemma': 'klicati', 'word': 'kličejo', 'msd': 'Ggnstm'}
+len_tokens: 4
+ves not in slo_to_id
+len_sids: 4
+len_sids: 1
+len_sids: 2
+len_paths: 8
+scores:
+score_sum for eng-30-02172296-v: 30
+score_sum for eng-30-00819508-v: 36
+score_sum for eng-30-02171664-v: 40
+score_sum for eng-30-00066025-v: 49
+time: 0.26s
+
+Test frame: ['S4494.t4'].
+{'lemma': 'razstaviti', 'word': 'razstavili', 'msd': 'Ggdd-mm'}
+{'lemma': 'delo', 'word': 'dela', 'msd': 'Sosmt'}
+{'lemma': 'avla', 'word': 'avli', 'msd': 'Sozem'}
+len_tokens: 3
+len_sids: 2
+len_sids: 13
+len_sids: 1
+len_paths: 26
+scores:
+score_sum for eng-30-01657977-v: 284
+score_sum for eng-30-02140033-v: 271
+time: 0.94s
+
+Test frame: ['S2960.t10'].
+{'lemma': 'zrediti', 'word': 'zredila', 'msd': 'Ggdd-ez'}
+{'lemma': 'precej', 'word': 'precej', 'msd': 'Rsn'}
+{'lemma': 'ta', 'word': 'tega', 'msd': 'Zk-ser'}
+len_tokens: 3
+time: 0.00s
+
+Test frame: ['S2755.t16'].
+{'lemma': 'zrediti', 'word': 'zredil', 'msd': 'Ggdd-em'}
+{'lemma': 'bolj', 'word': 'bolj', 'msd': 'Rsr'}
+{'lemma': 'leto', 'word': 'letih', 'msd': 'Sosmm'}
+len_tokens: 3
+bolj not in slo_to_id
+time: 0.00s
+
+Test frame: ['S3887.t15'].
+{'lemma': 'razbiti', 'word': 'razbil', 'msd': 'Ggdd-em'}
+{'lemma': 'nagibati', 'word': 'nagibal', 'msd': 'Ggnd-em'}
+len_tokens: 2
+len_sids: 10
+len_sids: 8
+len_paths: 80
+scores:
+score_sum for eng-30-00335923-v: 25
+score_sum for eng-30-00333907-v: 14
+score_sum for eng-30-01610463-v: 15
+score_sum for eng-30-00738440-v: 72
+score_sum for eng-30-00258665-v: 74
+score_sum for eng-30-01369346-v: 135
+score_sum for eng-30-00333758-v: 86
+score_sum for eng-30-01369758-v: 8
+score_sum for eng-30-01562061-v: 33
+score_sum for eng-30-00334050-v: 50
+time: 3.36s
+
+Test frame: ['S6961.t19'].
+{'lemma': 'razbiti', 'word': 'razbiti', 'msd': 'Ggdn'}
+{'lemma': 'on', 'word': 'ga', 'msd': 'Zotset--k'}
+len_tokens: 2
+len_sids: 10
+len_sids: 1
+len_paths: 10
+scores:
+score_sum for eng-30-00335923-v: 2
+score_sum for eng-30-00333907-v: 2
+score_sum for eng-30-01610463-v: 4
+score_sum for eng-30-00738440-v: 7
+score_sum for eng-30-00258665-v: 4
+score_sum for eng-30-01369346-v: 10
+score_sum for eng-30-00333758-v: 4
+score_sum for eng-30-01369758-v: 0
+score_sum for eng-30-01562061-v: 4
+score_sum for eng-30-00334050-v: 4
+time: 0.12s
+
+Test frame: ['S3054.t7'].
+{'lemma': 'posedati', 'word': 'posedajo', 'msd': 'Ggnstm'}
+{'lemma': 'trije', 'word': 'trije', 'msd': 'Kbgmmi'}
+{'lemma': 'hiša', 'word': 'hiši', 'msd': 'Sozem'}
+{'lemma': 'lepo', 'word': 'lepo', 'msd': 'Rsn'}
+{'lemma': 'medtem', 'word': 'Medtem', 'msd': 'Rsn'}
+len_tokens: 5
+trije not in slo_to_id
+lepo not in slo_to_id
+time: 0.00s
+
+Test frame: ['S9225.t33'].
+{'lemma': 'imenovati', 'word': 'imenovali', 'msd': 'Ggvd-mm'}
+{'lemma': 'on', 'word': 'jih', 'msd': 'Zotmmt--k'}
+{'lemma': 'znanstven', 'word': 'znanstvene', 'msd': 'Ppnzmt'}
+{'lemma': 'danes', 'word': 'danes', 'msd': 'Rsn'}
+len_tokens: 4
+len_sids: 20
+len_sids: 1
+len_sids: 4
+len_sids: 3
+len_paths: 240
+scores:
+score_sum for eng-30-01024190-v: 76
+score_sum for eng-30-01647229-v: 164
+score_sum for eng-30-01028294-v: 68
+score_sum for eng-30-01028079-v: 140
+score_sum for eng-30-02475922-v: 113
+score_sum for eng-30-01028466-v: 102
+score_sum for eng-30-00971015-v: 127
+score_sum for eng-30-02396205-v: 192
+score_sum for eng-30-01026095-v: 108
+score_sum for eng-30-00945853-v: 168
+score_sum for eng-30-01028748-v: 64
+score_sum for eng-30-01067995-v: 121
+score_sum for eng-30-02396716-v: 82
+score_sum for eng-30-02620587-v: 128
+score_sum for eng-30-01030132-v: 53
+score_sum for eng-30-00652346-v: 204
+score_sum for eng-30-00947439-v: 13
+score_sum for eng-30-01029642-v: 162
+score_sum for eng-30-00645552-v: 183
+score_sum for eng-30-02601456-v: 94
+time: 4.49s
+
+Test frame: ['S1051.t7'].
+{'lemma': 'imenovati', 'word': 'imenujemo', 'msd': 'Ggvspm'}
+{'lemma': 'zlo', 'word': 'zlo', 'msd': 'Soset'}
+{'lemma': 'zlo', 'word': 'zlo', 'msd': 'Sosei'}
+len_tokens: 3
+len_sids: 20
+len_sids: 3
+len_sids: 3
+len_paths: 180
+scores:
+score_sum for eng-30-01024190-v: 78
+score_sum for eng-30-01647229-v: 180
+score_sum for eng-30-01028294-v: 48
+score_sum for eng-30-01028079-v: 120
+score_sum for eng-30-02475922-v: 96
+score_sum for eng-30-01028466-v: 84
+score_sum for eng-30-00971015-v: 156
+score_sum for eng-30-02396205-v: 216
+score_sum for eng-30-01026095-v: 108
+score_sum for eng-30-00945853-v: 162
+score_sum for eng-30-01028748-v: 48
+score_sum for eng-30-01067995-v: 126
+score_sum for eng-30-02396716-v: 72
+score_sum for eng-30-02620587-v: 120
+score_sum for eng-30-01030132-v: 42
+score_sum for eng-30-00652346-v: 180
+score_sum for eng-30-00947439-v: 18
+score_sum for eng-30-01029642-v: 120
+score_sum for eng-30-00645552-v: 192
+score_sum for eng-30-02601456-v: 90
+time: 2.35s
+
+Test frame: ['S4410.t3'].
+{'lemma': 'imenovati', 'word': 'imenujejo', 'msd': 'Ggvstm'}
+{'lemma': 'zdravnik', 'word': 'zdravniki', 'msd': 'Sommi'}
+{'lemma': 'on', 'word': 'jih', 'msd': 'Zotzmt--k'}
+{'lemma': 'enako', 'word': 'Enako', 'msd': 'Rsn'}
+len_tokens: 4
+len_sids: 20
+len_sids: 3
+len_sids: 1
+len_sids: 2
+len_paths: 120
+scores:
+score_sum for eng-30-01024190-v: 45
+score_sum for eng-30-01647229-v: 112
+score_sum for eng-30-01028294-v: 41
+score_sum for eng-30-01028079-v: 84
+score_sum for eng-30-02475922-v: 69
+score_sum for eng-30-01028466-v: 65
+score_sum for eng-30-00971015-v: 80
+score_sum for eng-30-02396205-v: 129
+score_sum for eng-30-01026095-v: 78
+score_sum for eng-30-00945853-v: 128
+score_sum for eng-30-01028748-v: 41
+score_sum for eng-30-01067995-v: 70
+score_sum for eng-30-02396716-v: 53
+score_sum for eng-30-02620587-v: 83
+score_sum for eng-30-01030132-v: 34
+score_sum for eng-30-00652346-v: 123
+score_sum for eng-30-00947439-v: 6
+score_sum for eng-30-01029642-v: 86
+score_sum for eng-30-00645552-v: 120
+score_sum for eng-30-02601456-v: 59
+time: 4.09s

@@ -1,7 +1,9 @@
-# CJVT Valency
-The app parses a corpus (Kres.xml) and extracts valency frames. 
-A web user interface is exposed to list and examine the sentences and valency frames from the input corpus. 
-Users can add their own senses to sentences, which are used for grouping sentences and creating sense-specific valency patterns. 
+# CJVT Valency -- prototype
+This branch contains the prototype app. 
+Some modifications were made to the original: containerization. 
+
+## Requirements
+You need to get corpus data separately (100MB Git repo would be suboptimal). 
 
 ## Deployment
 We're using Docker. A single node Docker Swarm, to be exact. 

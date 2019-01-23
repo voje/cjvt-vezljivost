@@ -1,0 +1,6 @@
+<select>
+    <option disabled selected value>-- izberi --</option>
+{% for sg in sense_groups %}
+    <option {% if sg == state_sense_group %}selected {% endif %}onclick="pick_sense_group('{{ sg }}', true)">{{ sg }}</option>
+{% endfor %}
+</select>

@@ -1,0 +1,12 @@
+<ul>
+{% for w in words %}
+    <li>
+        <a href="javascript:get_frames('{{ w[0] }}')">{{ w[0] + " (" + w[1]|string + ")" }}
+        {# Star indicates sense data has been preprocessed. #}
+        {% if w[2] %}
+            {{ "*" }}
+        {% endif %}
+        </a>
+    </li>   
+{% endfor %}
+</ul>

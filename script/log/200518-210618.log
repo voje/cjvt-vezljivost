@@ -1,0 +1,708 @@
+INFO:__main__:Creating vallex_data.
+INFO:__main__:Creating ssj pickle from ../data/anno_final.conll.xml.
+INFO:valency.ssj_struct:SsjDict.read_xml(../data/anno_final.conll.xml)
+INFO:valency.ssj_struct:Time: 5.523086071014404s.
+INFO:valency.ssj_struct:0 duplicates, skipped 409 elements (missing linkGrp).
+INFO:valency.k_utils:Created anno_final.conll.pickle.
+INFO:valency.val_struct:Vallex.read_ssj(<valency.ssj_struct.SsjDict object at 0x7f7060f17b70>).
+WARNING:valency.frame:inconsistency between deep and shallow notation -- ['S1648.t24']
+WARNING:valency.val_struct:dropping SID=S999.t﻿1 - corrupted keys
+WARNING:valency.frame:inconsistency between deep and shallow notation -- ['S975.t1']
+WARNING:valency.val_struct:dropping SID=S1997.t﻿1 - corrupted keys
+WARNING:valency.val_struct:dropping SID=S4492.t﻿1 - corrupted keys
+WARNING:valency.frame:inconsistency between deep and shallow notation -- ['S3552.t10']
+WARNING:valency.val_struct:dropping SID=S2995.t﻿1 - corrupted keys
+WARNING:valency.val_struct:dropping SID=S1498.t﻿1 - corrupted keys
+WARNING:valency.val_struct:dropping SID=S2496.t﻿1 - corrupted keys
+WARNING:valency.frame:inconsistency between deep and shallow notation -- ['S3530.t30']
+WARNING:valency.val_struct:dropping SID=S500.t﻿1 - corrupted keys
+WARNING:valency.frame:inconsistency between deep and shallow notation -- ['S147.t14']
+WARNING:valency.val_struct:dropping SID=S3993.t﻿1 - corrupted keys
+WARNING:valency.frame:inconsistency between deep and shallow notation -- ['S657.t10']
+WARNING:valency.frame:inconsistency between deep and shallow notation -- ['S4989.t24']
+WARNING:valency.frame:inconsistency between deep and shallow notation -- ['S4279.t4']
+WARNING:valency.val_struct:dropping SID=S3494.t﻿1 - corrupted keys
+WARNING:valency.frame:inconsistency between deep and shallow notation -- ['S190.t10']
+INFO:valency.val_struct:Finished build_from_ssj() in 3.3s.
+INFO:valency.val_struct:Vallex has a total of 2162 key entries.
+INFO:valency.k_utils:Created vallex_data.pickle.
+DEBUG:valency.val_struct:vallex.process_after_read(): 0.00s
+INFO:__main__:
+[*] Starting the app.
+[*] args: ['./flask_app/app.py', '--datapath=../data', '--logpath=./log']
+[*] | logfile: ./log/main.log
+[*] | debug: False
+INFO:werkzeug: * Running on http://0.0.0.0:5004/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [20/May/2018 19:03:12] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/May/2018 19:03:12] "GET /static/lib/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/May/2018 19:03:12] "GET /static/style.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/May/2018 19:03:12] "GET /static/lib/jquery.min.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/May/2018 19:03:12] "GET /static/lib/bootstrap/js/bootstrap.min.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/May/2018 19:03:13] "GET /static/script.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/May/2018 19:03:13] "GET /letters HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/May/2018 19:03:13] "GET /reduce_functions HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/May/2018 19:03:14] "GET /words/i HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/May/2018 19:03:17] "GET /frames?hw=inficirati&rf=reduce_0 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/May/2018 19:03:19] "GET /frames?hw=inficirati&rf=reduce_5 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/May/2018 19:03:20] "GET /user_sense_groups/inficirati HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/May/2018 19:03:25] "GET /frames?hw=inficirati&rf=reduce_0 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/May/2018 19:03:25] "GET /get_sense_ids?collname=user_senses&hw=inficirati&sg= HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/May/2018 19:03:31] "POST /user_senses HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/May/2018 19:03:31] "GET /pick_sense_group/test1 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/May/2018 19:03:31] "GET /user_sense_groups/inficirati HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/May/2018 19:03:31] "GET /frames?hw=inficirati&rf=reduce_5 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/May/2018 19:03:31] "GET /user_sense_groups/inficirati HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/May/2018 19:03:37] "GET /pick_sense_group/test1 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/May/2018 19:03:37] "GET /frames?hw=inficirati&rf=reduce_5 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/May/2018 19:03:37] "GET /user_sense_groups/inficirati HTTP/1.1" 200 -
+INFO:valency.k_utils:Loaded vallex_data.pickle.
+INFO:__main__:Read vallex_data from .pickle.
+DEBUG:valency.val_struct:vallex.process_after_read(): 0.00s
+INFO:__main__:
+[*] Starting the app.
+[*] args: ['./flask_app/app.py', '--debug', '--datapath=../data', '--logpath=./log']
+[*] | logfile: ./log/main.log
+[*] | debug: True
+INFO:werkzeug: * Running on http://127.0.0.1:5004/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+INFO:valency.k_utils:Loaded vallex_data.pickle.
+INFO:__main__:Read vallex_data from .pickle.
+DEBUG:valency.val_struct:vallex.process_after_read(): 0.00s
+INFO:__main__:
+[*] Starting the app.
+[*] args: ['./flask_app/app.py', '--debug', '--datapath=../data', '--logpath=./log']
+[*] | logfile: ./log/main.log
+[*] | debug: True
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 270-091-123
+INFO:werkzeug:127.0.0.1 - - [20/May/2018 19:07:42] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/May/2018 19:07:42] "GET /static/lib/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/May/2018 19:07:42] "GET /static/style.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/May/2018 19:07:42] "GET /static/lib/jquery.min.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/May/2018 19:07:42] "GET /static/script.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/May/2018 19:07:42] "GET /static/lib/bootstrap/js/bootstrap.min.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/May/2018 19:07:42] "GET /letters HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/May/2018 19:07:42] "GET /reduce_functions HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/May/2018 19:07:47] "GET /words/s HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/May/2018 19:07:48] "GET /frames?hw=sedeti&rf=reduce_5 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/May/2018 19:07:48] "GET /user_sense_groups/sedeti HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/May/2018 19:07:52] "GET /frames?hw=segreti&rf=reduce_5 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/May/2018 19:07:52] "GET /user_sense_groups/segreti HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/May/2018 19:07:55] "GET /frames?hw=segreti&rf=reduce_0 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/May/2018 19:07:55] "GET /get_sense_ids?collname=user_senses&hw=segreti&sg= HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/May/2018 19:07:59] "POST /user_senses HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/May/2018 19:07:59] "GET /pick_sense_group/test1 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/May/2018 19:08:00] "GET /user_sense_groups/segreti HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/May/2018 19:08:00] "GET /frames?hw=segreti&rf=reduce_5 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/May/2018 19:08:00] "GET /user_sense_groups/segreti HTTP/1.1" 200 -
+INFO:valency.k_utils:Loaded vallex_data.pickle.
+INFO:__main__:Read vallex_data from .pickle.
+DEBUG:valency.val_struct:vallex.process_after_read(): 0.00s
+INFO:__main__:
+[*] Starting the app.
+[*] args: ['./flask_app/app.py', '--datapath=../data', '--logpath=./log']
+[*] | logfile: ./log/main.log
+[*] | debug: False
+INFO:werkzeug: * Running on http://0.0.0.0:5004/ (Press CTRL+C to quit)
+INFO:werkzeug:82.192.58.162 - - [20/May/2018 19:09:35] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:82.192.58.162 - - [20/May/2018 19:09:35] "GET /static/style.css HTTP/1.1" 200 -
+INFO:werkzeug:82.192.58.162 - - [20/May/2018 19:09:35] "GET /static/lib/jquery.min.js HTTP/1.1" 200 -
+INFO:werkzeug:82.192.58.162 - - [20/May/2018 19:09:35] "GET /static/lib/bootstrap/js/bootstrap.min.js HTTP/1.1" 200 -
+INFO:werkzeug:82.192.58.162 - - [20/May/2018 19:09:35] "GET /static/lib/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 -
+INFO:werkzeug:82.192.58.162 - - [20/May/2018 19:09:35] "GET /static/script.js HTTP/1.1" 200 -
+INFO:werkzeug:82.192.58.162 - - [20/May/2018 19:09:35] "GET /letters HTTP/1.1" 200 -
+INFO:werkzeug:82.192.58.162 - - [20/May/2018 19:09:35] "GET /reduce_functions HTTP/1.1" 200 -
+INFO:werkzeug:82.192.58.162 - - [20/May/2018 19:09:37] "GET /words/l HTTP/1.1" 200 -
+INFO:werkzeug:82.192.58.162 - - [20/May/2018 19:09:39] "GET /frames?hw=lenariti&rf=reduce_0 HTTP/1.1" 200 -
+INFO:werkzeug:82.192.58.162 - - [20/May/2018 19:09:40] "GET /frames?hw=letati&rf=reduce_0 HTTP/1.1" 200 -
+INFO:werkzeug:82.192.58.162 - - [20/May/2018 19:09:43] "GET /frames?hw=letati&rf=reduce_5 HTTP/1.1" 200 -
+INFO:werkzeug:82.192.58.162 - - [20/May/2018 19:09:43] "GET /user_sense_groups/letati HTTP/1.1" 200 -
+INFO:werkzeug:82.192.58.162 - - [20/May/2018 19:09:46] "GET /frames?hw=letati&rf=reduce_0 HTTP/1.1" 200 -
+INFO:werkzeug:82.192.58.162 - - [20/May/2018 19:09:46] "GET /get_sense_ids?collname=user_senses&hw=letati&sg= HTTP/1.1" 200 -
+INFO:werkzeug:82.192.58.162 - - [20/May/2018 19:09:51] "POST /user_senses HTTP/1.1" 200 -
+INFO:werkzeug:82.192.58.162 - - [20/May/2018 19:09:52] "GET /pick_sense_group/test HTTP/1.1" 200 -
+INFO:werkzeug:82.192.58.162 - - [20/May/2018 19:09:52] "GET /user_sense_groups/letati HTTP/1.1" 200 -
+INFO:werkzeug:82.192.58.162 - - [20/May/2018 19:09:52] "GET /frames?hw=letati&rf=reduce_5 HTTP/1.1" 200 -
+INFO:werkzeug:82.192.58.162 - - [20/May/2018 19:09:52] "GET /user_sense_groups/letati HTTP/1.1" 200 -
+INFO:werkzeug:82.192.58.162 - - [20/May/2018 19:09:55] "GET /frames?hw=ljubosumen&rf=reduce_5 HTTP/1.1" 200 -
+INFO:werkzeug:82.192.58.162 - - [20/May/2018 19:09:55] "GET /user_sense_groups/ljubosumen HTTP/1.1" 200 -
+INFO:werkzeug:82.192.58.162 - - [20/May/2018 19:09:55] "GET /frames?hw=ljubiti&rf=reduce_5 HTTP/1.1" 200 -
+INFO:werkzeug:82.192.58.162 - - [20/May/2018 19:09:55] "GET /user_sense_groups/ljubiti HTTP/1.1" 200 -
+INFO:werkzeug:82.192.58.162 - - [20/May/2018 19:09:57] "GET /frames?hw=lotiti&rf=reduce_5 HTTP/1.1" 200 -
+INFO:werkzeug:82.192.58.162 - - [20/May/2018 19:09:57] "GET /user_sense_groups/lotiti HTTP/1.1" 200 -
+INFO:werkzeug:82.192.58.162 - - [20/May/2018 19:09:59] "GET /frames?hw=lotevati&rf=reduce_5 HTTP/1.1" 200 -
+INFO:werkzeug:82.192.58.162 - - [20/May/2018 19:09:59] "GET /user_sense_groups/lotevati HTTP/1.1" 200 -
+INFO:werkzeug:82.192.58.162 - - [20/May/2018 19:09:59] "GET /frames?hw=ljubosumen&rf=reduce_5 HTTP/1.1" 200 -
+INFO:werkzeug:82.192.58.162 - - [20/May/2018 19:10:00] "GET /user_sense_groups/ljubosumen HTTP/1.1" 200 -
+INFO:werkzeug:82.192.58.162 - - [20/May/2018 19:10:00] "GET /frames?hw=ljubiti&rf=reduce_5 HTTP/1.1" 200 -
+INFO:werkzeug:82.192.58.162 - - [20/May/2018 19:10:00] "GET /user_sense_groups/ljubiti HTTP/1.1" 200 -
+INFO:werkzeug:82.192.58.162 - - [20/May/2018 19:10:04] "GET /frames?hw=lotiti&rf=reduce_5 HTTP/1.1" 200 -
+INFO:werkzeug:82.192.58.162 - - [20/May/2018 19:10:04] "GET /user_sense_groups/lotiti HTTP/1.1" 200 -
+INFO:werkzeug:82.192.58.162 - - [20/May/2018 19:10:11] "GET /frames?hw=le%C5%BEati&rf=reduce_5 HTTP/1.1" 200 -
+INFO:werkzeug:82.192.58.162 - - [20/May/2018 19:10:11] "GET /user_sense_groups/le%C5%BEati HTTP/1.1" 200 -
+INFO:werkzeug:82.192.58.162 - - [20/May/2018 19:10:12] "GET /frames?hw=lizati&rf=reduce_5 HTTP/1.1" 200 -
+INFO:werkzeug:82.192.58.162 - - [20/May/2018 19:10:12] "GET /user_sense_groups/lizati HTTP/1.1" 200 -
+INFO:werkzeug:82.192.58.162 - - [20/May/2018 19:10:13] "GET /frames?hw=le%C5%BEati&rf=reduce_5 HTTP/1.1" 200 -
+INFO:werkzeug:82.192.58.162 - - [20/May/2018 19:10:13] "GET /user_sense_groups/le%C5%BEati HTTP/1.1" 200 -
+INFO:werkzeug:82.192.58.162 - - [20/May/2018 19:10:16] "GET /frames?hw=ljubosumen&rf=reduce_5 HTTP/1.1" 200 -
+INFO:werkzeug:82.192.58.162 - - [20/May/2018 19:10:16] "GET /user_sense_groups/ljubosumen HTTP/1.1" 200 -
+INFO:werkzeug:82.192.58.162 - - [20/May/2018 19:10:20] "GET /frames?hw=lo%C4%8Diti&rf=reduce_5 HTTP/1.1" 200 -
+INFO:werkzeug:82.192.58.162 - - [20/May/2018 19:10:20] "GET /user_sense_groups/lo%C4%8Diti HTTP/1.1" 200 -
+INFO:werkzeug:82.192.58.162 - - [20/May/2018 19:10:23] "GET /frames?hw=lo%C4%8Diti&rf=reduce_0 HTTP/1.1" 200 -
+INFO:werkzeug:82.192.58.162 - - [20/May/2018 19:10:24] "GET /get_sense_ids?collname=user_senses&hw=lo%C4%8Diti&sg=test HTTP/1.1" 200 -
+INFO:werkzeug:82.192.58.162 - - [20/May/2018 19:10:31] "POST /user_senses HTTP/1.1" 200 -
+INFO:werkzeug:82.192.58.162 - - [20/May/2018 19:10:31] "GET /pick_sense_group/test1 HTTP/1.1" 200 -
+INFO:werkzeug:82.192.58.162 - - [20/May/2018 19:10:31] "GET /user_sense_groups/lo%C4%8Diti HTTP/1.1" 200 -
+INFO:werkzeug:82.192.58.162 - - [20/May/2018 19:10:31] "GET /frames?hw=lo%C4%8Diti&rf=reduce_5 HTTP/1.1" 200 -
+INFO:werkzeug:82.192.58.162 - - [20/May/2018 19:10:31] "GET /user_sense_groups/lo%C4%8Diti HTTP/1.1" 200 -
+INFO:werkzeug:82.192.58.162 - - [20/May/2018 19:10:33] "GET /frames?hw=lenariti&rf=reduce_5 HTTP/1.1" 200 -
+INFO:werkzeug:82.192.58.162 - - [20/May/2018 19:10:33] "GET /user_sense_groups/lenariti HTTP/1.1" 200 -
+INFO:werkzeug:82.192.58.162 - - [20/May/2018 19:10:34] "GET /frames?hw=letati&rf=reduce_5 HTTP/1.1" 200 -
+INFO:werkzeug:82.192.58.162 - - [20/May/2018 19:10:34] "GET /user_sense_groups/letati HTTP/1.1" 200 -
+INFO:werkzeug:82.192.58.162 - - [20/May/2018 19:10:35] "GET /frames?hw=le%C5%BEati&rf=reduce_5 HTTP/1.1" 200 -
+INFO:werkzeug:82.192.58.162 - - [20/May/2018 19:10:36] "GET /user_sense_groups/le%C5%BEati HTTP/1.1" 200 -
+INFO:werkzeug:82.192.58.162 - - [20/May/2018 19:10:37] "GET /pick_sense_group/eval1 HTTP/1.1" 200 -
+INFO:werkzeug:82.192.58.162 - - [20/May/2018 19:10:37] "GET /frames?hw=le%C5%BEati&rf=reduce_5 HTTP/1.1" 200 -
+INFO:werkzeug:82.192.58.162 - - [20/May/2018 19:10:37] "GET /user_sense_groups/le%C5%BEati HTTP/1.1" 200 -
+INFO:werkzeug:82.192.58.162 - - [20/May/2018 19:10:39] "GET /frames?hw=le%C5%BEati&rf=reduce_0 HTTP/1.1" 200 -
+INFO:werkzeug:82.192.58.162 - - [20/May/2018 19:10:39] "GET /get_sense_ids?collname=user_senses&hw=le%C5%BEati&sg=eval1 HTTP/1.1" 200 -
+INFO:werkzeug:82.192.58.162 - - [20/May/2018 19:10:58] "POST /user_senses HTTP/1.1" 200 -
+INFO:werkzeug:82.192.58.162 - - [20/May/2018 19:10:58] "GET /frames?hw=le%C5%BEati&rf=reduce_5 HTTP/1.1" 200 -
+INFO:werkzeug:82.192.58.162 - - [20/May/2018 19:10:58] "GET /pick_sense_group/test1 HTTP/1.1" 200 -
+INFO:werkzeug:82.192.58.162 - - [20/May/2018 19:10:58] "GET /user_sense_groups/le%C5%BEati HTTP/1.1" 200 -
+INFO:werkzeug:82.192.58.162 - - [20/May/2018 19:10:58] "GET /user_sense_groups/le%C5%BEati HTTP/1.1" 200 -
+INFO:werkzeug:82.192.58.162 - - [20/May/2018 19:11:05] "GET /pick_sense_group/test1 HTTP/1.1" 200 -
+INFO:werkzeug:82.192.58.162 - - [20/May/2018 19:11:05] "GET /frames?hw=le%C5%BEati&rf=reduce_5 HTTP/1.1" 200 -
+INFO:werkzeug:82.192.58.162 - - [20/May/2018 19:11:05] "GET /user_sense_groups/le%C5%BEati HTTP/1.1" 200 -
+INFO:werkzeug:82.192.58.162 - - [20/May/2018 19:11:12] "GET /pick_sense_group/eval1 HTTP/1.1" 200 -
+INFO:werkzeug:82.192.58.162 - - [20/May/2018 19:11:12] "GET /frames?hw=le%C5%BEati&rf=reduce_5 HTTP/1.1" 200 -
+INFO:werkzeug:82.192.58.162 - - [20/May/2018 19:11:12] "GET /user_sense_groups/le%C5%BEati HTTP/1.1" 200 -
+INFO:werkzeug:82.192.58.162 - - [20/May/2018 19:11:14] "GET /pick_sense_group/test1 HTTP/1.1" 200 -
+INFO:werkzeug:82.192.58.162 - - [20/May/2018 19:11:14] "GET /frames?hw=le%C5%BEati&rf=reduce_5 HTTP/1.1" 200 -
+INFO:werkzeug:82.192.58.162 - - [20/May/2018 19:11:14] "GET /user_sense_groups/le%C5%BEati HTTP/1.1" 200 -
+INFO:werkzeug:82.192.58.162 - - [20/May/2018 19:11:15] "GET /frames?hw=le%C5%BEati&rf=reduce_5 HTTP/1.1" 200 -
+INFO:werkzeug:82.192.58.162 - - [20/May/2018 19:11:15] "GET /pick_sense_group/eval1 HTTP/1.1" 200 -
+INFO:werkzeug:82.192.58.162 - - [20/May/2018 19:11:15] "GET /user_sense_groups/le%C5%BEati HTTP/1.1" 200 -
+INFO:werkzeug:82.192.58.162 - - [20/May/2018 19:11:18] "GET /pick_sense_group/eval1 HTTP/1.1" 200 -
+INFO:werkzeug:82.192.58.162 - - [20/May/2018 19:11:18] "GET /frames?hw=le%C5%BEati&rf=reduce_5 HTTP/1.1" 200 -
+INFO:werkzeug:82.192.58.162 - - [20/May/2018 19:11:18] "GET /user_sense_groups/le%C5%BEati HTTP/1.1" 200 -
+INFO:werkzeug:82.192.58.162 - - [20/May/2018 19:11:19] "GET /frames?hw=le%C5%BEati&rf=reduce_5 HTTP/1.1" 200 -
+INFO:werkzeug:82.192.58.162 - - [20/May/2018 19:11:19] "GET /pick_sense_group/test1 HTTP/1.1" 200 -
+INFO:werkzeug:82.192.58.162 - - [20/May/2018 19:11:19] "GET /user_sense_groups/le%C5%BEati HTTP/1.1" 200 -
+INFO:werkzeug:82.192.58.162 - - [20/May/2018 19:11:21] "GET /frames?hw=le%C5%BEati&rf=reduce_5 HTTP/1.1" 200 -
+INFO:werkzeug:82.192.58.162 - - [20/May/2018 19:11:21] "GET /pick_sense_group/test1 HTTP/1.1" 200 -
+INFO:werkzeug:82.192.58.162 - - [20/May/2018 19:11:22] "GET /user_sense_groups/le%C5%BEati HTTP/1.1" 200 -
+INFO:valency.k_utils:Loaded vallex_data.pickle.
+INFO:__main__:Read vallex_data from .pickle.
+DEBUG:valency.val_struct:vallex.process_after_read(): 0.00s
+INFO:__main__:
+[*] Starting the app.
+[*] args: ['./flask_app/app.py', '--datapath=../data', '--logpath=./log']
+[*] | logfile: ./log/main.log
+[*] | debug: False
+INFO:werkzeug: * Running on http://0.0.0.0:5004/ (Press CTRL+C to quit)
+INFO:werkzeug:82.192.58.162 - - [20/May/2018 19:14:17] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:82.192.58.162 - - [20/May/2018 19:14:17] "GET /static/lib/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 -
+INFO:werkzeug:82.192.58.162 - - [20/May/2018 19:14:17] "GET /static/style.css HTTP/1.1" 200 -
+INFO:werkzeug:82.192.58.162 - - [20/May/2018 19:14:17] "GET /static/lib/jquery.min.js HTTP/1.1" 200 -
+INFO:werkzeug:82.192.58.162 - - [20/May/2018 19:14:17] "GET /static/lib/bootstrap/js/bootstrap.min.js HTTP/1.1" 200 -
+INFO:werkzeug:82.192.58.162 - - [20/May/2018 19:14:17] "GET /static/script.js HTTP/1.1" 200 -
+INFO:werkzeug:82.192.58.162 - - [20/May/2018 19:14:17] "GET /letters HTTP/1.1" 200 -
+INFO:werkzeug:82.192.58.162 - - [20/May/2018 19:14:17] "GET /reduce_functions HTTP/1.1" 200 -
+INFO:werkzeug:82.192.58.162 - - [20/May/2018 19:14:19] "GET /words/l HTTP/1.1" 200 -
+INFO:werkzeug:82.192.58.162 - - [20/May/2018 19:14:20] "GET /frames?hw=le%C5%BEati&rf=reduce_0 HTTP/1.1" 200 -
+INFO:werkzeug:82.192.58.162 - - [20/May/2018 19:14:23] "GET /frames?hw=le%C5%BEati&rf=reduce_5 HTTP/1.1" 200 -
+INFO:werkzeug:82.192.58.162 - - [20/May/2018 19:14:23] "GET /user_sense_groups/le%C5%BEati HTTP/1.1" 200 -
+INFO:werkzeug:82.192.58.162 - - [20/May/2018 19:14:25] "GET /pick_sense_group/eval1 HTTP/1.1" 200 -
+INFO:werkzeug:82.192.58.162 - - [20/May/2018 19:14:25] "GET /frames?hw=le%C5%BEati&rf=reduce_5 HTTP/1.1" 200 -
+INFO:werkzeug:82.192.58.162 - - [20/May/2018 19:14:25] "GET /user_sense_groups/le%C5%BEati HTTP/1.1" 200 -
+INFO:werkzeug:82.192.58.162 - - [20/May/2018 19:14:27] "GET /pick_sense_group/test1 HTTP/1.1" 200 -
+INFO:werkzeug:82.192.58.162 - - [20/May/2018 19:14:27] "GET /frames?hw=le%C5%BEati&rf=reduce_5 HTTP/1.1" 200 -
+INFO:werkzeug:82.192.58.162 - - [20/May/2018 19:14:27] "GET /user_sense_groups/le%C5%BEati HTTP/1.1" 200 -
+INFO:werkzeug:82.192.58.162 - - [20/May/2018 19:14:29] "GET /pick_sense_group/eval1 HTTP/1.1" 200 -
+INFO:werkzeug:82.192.58.162 - - [20/May/2018 19:14:29] "GET /frames?hw=le%C5%BEati&rf=reduce_5 HTTP/1.1" 200 -
+INFO:werkzeug:82.192.58.162 - - [20/May/2018 19:14:29] "GET /user_sense_groups/le%C5%BEati HTTP/1.1" 200 -
+INFO:werkzeug:82.192.58.162 - - [20/May/2018 19:14:31] "GET /pick_sense_group/test1 HTTP/1.1" 200 -
+INFO:werkzeug:82.192.58.162 - - [20/May/2018 19:14:31] "GET /frames?hw=le%C5%BEati&rf=reduce_5 HTTP/1.1" 200 -
+INFO:werkzeug:82.192.58.162 - - [20/May/2018 19:14:31] "GET /user_sense_groups/le%C5%BEati HTTP/1.1" 200 -
+INFO:werkzeug:82.192.58.162 - - [20/May/2018 19:14:32] "GET /pick_sense_group/eval1 HTTP/1.1" 200 -
+INFO:werkzeug:82.192.58.162 - - [20/May/2018 19:14:32] "GET /frames?hw=le%C5%BEati&rf=reduce_5 HTTP/1.1" 200 -
+INFO:werkzeug:82.192.58.162 - - [20/May/2018 19:14:32] "GET /user_sense_groups/le%C5%BEati HTTP/1.1" 200 -
+INFO:werkzeug:82.192.58.162 - - [20/May/2018 19:14:33] "GET /frames?hw=le%C5%BEati&rf=reduce_0 HTTP/1.1" 200 -
+INFO:werkzeug:82.192.58.162 - - [20/May/2018 19:14:33] "GET /get_sense_ids?collname=user_senses&hw=le%C5%BEati&sg=eval1 HTTP/1.1" 200 -
+INFO:werkzeug:82.192.58.162 - - [20/May/2018 19:14:55] "POST /user_senses HTTP/1.1" 200 -
+INFO:werkzeug:82.192.58.162 - - [20/May/2018 19:14:55] "GET /pick_sense_group/test1 HTTP/1.1" 200 -
+INFO:werkzeug:82.192.58.162 - - [20/May/2018 19:14:55] "GET /frames?hw=le%C5%BEati&rf=reduce_5 HTTP/1.1" 200 -
+INFO:werkzeug:82.192.58.162 - - [20/May/2018 19:14:55] "GET /user_sense_groups/le%C5%BEati HTTP/1.1" 200 -
+INFO:werkzeug:82.192.58.162 - - [20/May/2018 19:14:55] "GET /user_sense_groups/le%C5%BEati HTTP/1.1" 200 -
+INFO:werkzeug:82.192.58.162 - - [20/May/2018 19:14:57] "GET /pick_sense_group/eval1 HTTP/1.1" 200 -
+INFO:werkzeug:82.192.58.162 - - [20/May/2018 19:14:57] "GET /frames?hw=le%C5%BEati&rf=reduce_5 HTTP/1.1" 200 -
+INFO:werkzeug:82.192.58.162 - - [20/May/2018 19:14:58] "GET /user_sense_groups/le%C5%BEati HTTP/1.1" 200 -
+INFO:werkzeug:82.192.58.162 - - [20/May/2018 19:14:59] "GET /pick_sense_group/test1 HTTP/1.1" 200 -
+INFO:werkzeug:82.192.58.162 - - [20/May/2018 19:14:59] "GET /frames?hw=le%C5%BEati&rf=reduce_5 HTTP/1.1" 200 -
+INFO:werkzeug:82.192.58.162 - - [20/May/2018 19:14:59] "GET /user_sense_groups/le%C5%BEati HTTP/1.1" 200 -
+INFO:werkzeug:82.192.58.162 - - [20/May/2018 19:15:00] "GET /frames?hw=le%C5%BEati&rf=reduce_3 HTTP/1.1" 200 -
+INFO:werkzeug:82.192.58.162 - - [20/May/2018 19:15:34] "GET /frames?hw=le%C5%BEati&rf=reduce_4 HTTP/1.1" 200 -
+INFO:werkzeug:82.192.58.162 - - [20/May/2018 19:16:04] "GET /frames?hw=le%C5%BEati&rf=reduce_5 HTTP/1.1" 200 -
+INFO:werkzeug:82.192.58.162 - - [20/May/2018 19:16:04] "GET /user_sense_groups/le%C5%BEati HTTP/1.1" 200 -
+INFO:werkzeug:82.192.58.162 - - [20/May/2018 19:16:07] "GET /words/a HTTP/1.1" 200 -
+INFO:werkzeug:82.192.58.162 - - [20/May/2018 19:16:08] "GET /words/%C4%8D HTTP/1.1" 200 -
+INFO:werkzeug:82.192.58.162 - - [20/May/2018 19:16:09] "GET /frames?hw=%C4%8Dakati&rf=reduce_5 HTTP/1.1" 200 -
+INFO:werkzeug:82.192.58.162 - - [20/May/2018 19:16:09] "GET /user_sense_groups/%C4%8Dakati HTTP/1.1" 200 -
+INFO:werkzeug:82.192.58.162 - - [20/May/2018 19:16:19] "GET /frames?hw=%C4%8Dakati&rf=reduce_4 HTTP/1.1" 200 -
+INFO:werkzeug:82.192.58.162 - - [20/May/2018 19:16:20] "GET /frames?hw=%C4%8Dakati&rf=reduce_3 HTTP/1.1" 200 -
+INFO:werkzeug:82.192.58.162 - - [20/May/2018 19:16:21] "GET /frames?hw=%C4%8Dakati&rf=reduce_5 HTTP/1.1" 200 -
+INFO:werkzeug:82.192.58.162 - - [20/May/2018 19:16:21] "GET /user_sense_groups/%C4%8Dakati HTTP/1.1" 200 -
+INFO:werkzeug:82.192.58.162 - - [20/May/2018 19:16:22] "GET /frames?hw=%C4%8Dakati&rf=reduce_0 HTTP/1.1" 200 -
+INFO:werkzeug:82.192.58.162 - - [20/May/2018 19:16:22] "GET /get_sense_ids?collname=user_senses&hw=%C4%8Dakati&sg=test1 HTTP/1.1" 200 -
+INFO:werkzeug:82.192.58.162 - - [20/May/2018 19:16:24] "GET /user_sense_groups/%C4%8Dakati HTTP/1.1" 200 -
+INFO:werkzeug:82.192.58.162 - - [20/May/2018 19:16:24] "GET /frames?hw=%C4%8Dakati&rf=reduce_5 HTTP/1.1" 200 -
+INFO:werkzeug:82.192.58.162 - - [20/May/2018 19:16:24] "GET /user_sense_groups/%C4%8Dakati HTTP/1.1" 200 -
+INFO:werkzeug:82.192.58.162 - - [20/May/2018 19:17:16] "GET /frames?hw=%C4%8Dakati&rf=reduce_0 HTTP/1.1" 200 -
+INFO:werkzeug:82.192.58.162 - - [20/May/2018 19:17:16] "GET /get_sense_ids?collname=user_senses&hw=%C4%8Dakati&sg=test1 HTTP/1.1" 200 -
+INFO:werkzeug:82.192.58.162 - - [20/May/2018 19:17:17] "GET /user_sense_groups/%C4%8Dakati HTTP/1.1" 200 -
+INFO:werkzeug:82.192.58.162 - - [20/May/2018 19:17:17] "GET /frames?hw=%C4%8Dakati&rf=reduce_5 HTTP/1.1" 200 -
+INFO:werkzeug:82.192.58.162 - - [20/May/2018 19:17:17] "GET /user_sense_groups/%C4%8Dakati HTTP/1.1" 200 -
+INFO:werkzeug:82.192.58.162 - - [20/May/2018 19:17:26] "GET /frames?hw=%C4%8Dakati&rf=reduce_0 HTTP/1.1" 200 -
+INFO:werkzeug:82.192.58.162 - - [20/May/2018 19:17:27] "GET /get_sense_ids?collname=user_senses&hw=%C4%8Dakati&sg=test1 HTTP/1.1" 200 -
+INFO:werkzeug:82.192.58.162 - - [20/May/2018 19:17:50] "GET /frames?hw=%C4%8Dakati&rf=reduce_5 HTTP/1.1" 200 -
+INFO:werkzeug:82.192.58.162 - - [20/May/2018 19:17:51] "GET /user_sense_groups/%C4%8Dakati HTTP/1.1" 200 -
+INFO:werkzeug:82.192.58.162 - - [20/May/2018 19:17:51] "GET /user_sense_groups/%C4%8Dakati HTTP/1.1" 200 -
+INFO:werkzeug:82.192.58.162 - - [20/May/2018 19:17:52] "GET /frames?hw=%C4%8Dakati&rf=reduce_0 HTTP/1.1" 200 -
+INFO:werkzeug:82.192.58.162 - - [20/May/2018 19:17:52] "GET /get_sense_ids?collname=user_senses&hw=%C4%8Dakati&sg=test1 HTTP/1.1" 200 -
+INFO:werkzeug:82.192.58.162 - - [20/May/2018 19:17:53] "GET /frames?hw=%C4%8Dakati&rf=reduce_5 HTTP/1.1" 200 -
+INFO:werkzeug:82.192.58.162 - - [20/May/2018 19:17:53] "GET /user_sense_groups/%C4%8Dakati HTTP/1.1" 200 -
+INFO:werkzeug:82.192.58.162 - - [20/May/2018 19:17:53] "GET /user_sense_groups/%C4%8Dakati HTTP/1.1" 200 -
+INFO:valency.k_utils:Loaded vallex_data.pickle.
+INFO:__main__:Read vallex_data from .pickle.
+DEBUG:valency.val_struct:vallex.process_after_read(): 0.00s
+INFO:__main__:
+[*] Starting the app.
+[*] args: ['./flask_app/app.py', '--datapath=../data', '--logpath=./log']
+[*] | logfile: ./log/main.log
+[*] | debug: False
+INFO:werkzeug: * Running on http://0.0.0.0:5004/ (Press CTRL+C to quit)
+INFO:werkzeug:82.192.58.162 - - [20/May/2018 19:19:43] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:82.192.58.162 - - [20/May/2018 19:19:43] "GET /static/lib/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 -
+INFO:werkzeug:82.192.58.162 - - [20/May/2018 19:19:44] "GET /static/style.css HTTP/1.1" 200 -
+INFO:werkzeug:82.192.58.162 - - [20/May/2018 19:19:44] "GET /static/lib/jquery.min.js HTTP/1.1" 200 -
+INFO:werkzeug:82.192.58.162 - - [20/May/2018 19:19:44] "GET /static/script.js HTTP/1.1" 200 -
+INFO:werkzeug:82.192.58.162 - - [20/May/2018 19:19:44] "GET /static/lib/bootstrap/js/bootstrap.min.js HTTP/1.1" 200 -
+INFO:werkzeug:82.192.58.162 - - [20/May/2018 19:19:44] "GET /letters HTTP/1.1" 200 -
+INFO:werkzeug:82.192.58.162 - - [20/May/2018 19:19:44] "GET /reduce_functions HTTP/1.1" 200 -
+INFO:werkzeug:82.192.58.162 - - [21/May/2018 10:36:53] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:82.192.58.162 - - [21/May/2018 10:36:53] "GET /static/lib/bootstrap/js/bootstrap.min.js HTTP/1.1" 200 -
+INFO:werkzeug:82.192.58.162 - - [21/May/2018 10:36:53] "GET /static/script.js HTTP/1.1" 200 -
+INFO:werkzeug:82.192.58.162 - - [21/May/2018 10:36:53] "GET /static/lib/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 -
+INFO:werkzeug:82.192.58.162 - - [21/May/2018 10:36:53] "GET /static/lib/jquery.min.js HTTP/1.1" 200 -
+INFO:werkzeug:82.192.58.162 - - [21/May/2018 10:36:53] "GET /static/style.css HTTP/1.1" 200 -
+INFO:werkzeug:82.192.58.162 - - [21/May/2018 10:36:54] "GET /letters HTTP/1.1" 200 -
+INFO:werkzeug:82.192.58.162 - - [21/May/2018 10:36:54] "GET /reduce_functions HTTP/1.1" 200 -
+INFO:werkzeug:82.192.58.162 - - [21/May/2018 10:36:55] "GET /words/i HTTP/1.1" 200 -
+INFO:werkzeug:82.192.58.162 - - [21/May/2018 10:42:53] "GET /frames?hw=igrati&rf=reduce_0 HTTP/1.1" 200 -
+INFO:werkzeug:82.192.58.162 - - [21/May/2018 10:42:55] "GET /frames?hw=igrati&rf=reduce_5 HTTP/1.1" 200 -
+INFO:werkzeug:82.192.58.162 - - [21/May/2018 10:42:55] "GET /user_sense_groups/igrati HTTP/1.1" 200 -
+INFO:werkzeug:82.192.58.162 - - [21/May/2018 10:43:05] "GET /frames?hw=ignorirati&rf=reduce_5 HTTP/1.1" 200 -
+INFO:werkzeug:82.192.58.162 - - [21/May/2018 10:43:05] "GET /user_sense_groups/ignorirati HTTP/1.1" 200 -
+INFO:werkzeug:82.192.58.162 - - [21/May/2018 10:43:07] "GET /words/h HTTP/1.1" 200 -
+INFO:werkzeug:82.192.58.162 - - [21/May/2018 10:43:46] "GET /frames?hw=ignorirati&rf=reduce_0 HTTP/1.1" 200 -
+INFO:werkzeug:82.192.58.162 - - [21/May/2018 10:43:46] "GET /get_sense_ids?collname=user_senses&hw=ignorirati&sg= HTTP/1.1" 200 -
+INFO:werkzeug:193.2.179.253 - - [21/May/2018 10:51:57] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:193.2.179.253 - - [21/May/2018 10:51:58] "GET /static/lib/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 -
+INFO:werkzeug:193.2.179.253 - - [21/May/2018 10:51:58] "GET /static/style.css HTTP/1.1" 200 -
+INFO:werkzeug:193.2.179.253 - - [21/May/2018 10:51:58] "GET /static/lib/jquery.min.js HTTP/1.1" 200 -
+INFO:werkzeug:193.2.179.253 - - [21/May/2018 10:51:58] "GET /static/lib/bootstrap/js/bootstrap.min.js HTTP/1.1" 200 -
+INFO:werkzeug:193.2.179.253 - - [21/May/2018 10:51:58] "GET /static/script.js HTTP/1.1" 200 -
+INFO:werkzeug:193.2.179.253 - - [21/May/2018 10:51:59] "GET /reduce_functions HTTP/1.1" 200 -
+INFO:werkzeug:193.2.179.253 - - [21/May/2018 10:51:59] "GET /letters HTTP/1.1" 200 -
+INFO:werkzeug:193.2.179.253 - - [21/May/2018 10:52:00] "GET /favicon.ico HTTP/1.1" 404 -
+INFO:werkzeug:193.2.179.253 - - [21/May/2018 10:52:44] "GET /words/d HTTP/1.1" 200 -
+INFO:werkzeug:193.2.179.253 - - [21/May/2018 10:52:48] "GET /frames?hw=di%C5%A1ati&rf=reduce_3 HTTP/1.1" 200 -
+INFO:werkzeug:193.2.179.253 - - [21/May/2018 10:53:25] "GET /frames?hw=di%C5%A1ati&rf=reduce_0 HTTP/1.1" 200 -
+INFO:werkzeug:193.2.179.253 - - [21/May/2018 10:54:25] "GET /frames?hw=di%C5%A1ati&rf=reduce_1 HTTP/1.1" 200 -
+INFO:werkzeug:193.2.179.253 - - [21/May/2018 10:54:31] "GET /frames?hw=di%C5%A1ati&rf=reduce_4 HTTP/1.1" 200 -
+INFO:werkzeug:193.2.179.253 - - [21/May/2018 10:54:39] "GET /frames?hw=di%C5%A1ati&rf=reduce_5 HTTP/1.1" 200 -
+INFO:werkzeug:193.2.179.253 - - [21/May/2018 10:54:39] "GET /user_sense_groups/di%C5%A1ati HTTP/1.1" 200 -
+INFO:werkzeug:193.2.179.253 - - [21/May/2018 10:54:49] "GET /frames?hw=di%C5%A1ati&rf=reduce_0 HTTP/1.1" 200 -
+INFO:werkzeug:193.2.179.253 - - [21/May/2018 10:54:49] "GET /get_sense_ids?collname=user_senses&hw=di%C5%A1ati&sg= HTTP/1.1" 200 -
+INFO:werkzeug:193.2.179.253 - - [21/May/2018 10:55:09] "GET /frames?hw=di%C5%A1ati&rf=reduce_3 HTTP/1.1" 200 -
+INFO:werkzeug:193.2.179.253 - - [21/May/2018 10:56:07] "GET /frames?hw=di%C5%A1ati&rf=reduce_5 HTTP/1.1" 200 -
+INFO:werkzeug:193.2.179.253 - - [21/May/2018 10:56:07] "GET /user_sense_groups/di%C5%A1ati HTTP/1.1" 200 -
+INFO:werkzeug:193.2.179.253 - - [21/May/2018 10:56:18] "GET /frames?hw=di%C5%A1ati&rf=reduce_0 HTTP/1.1" 200 -
+INFO:werkzeug:193.2.179.253 - - [21/May/2018 10:56:18] "GET /get_sense_ids?collname=user_senses&hw=di%C5%A1ati&sg= HTTP/1.1" 200 -
+INFO:werkzeug:193.2.179.253 - - [21/May/2018 10:57:48] "GET /frames?hw=di%C5%A1ati&rf=reduce_0 HTTP/1.1" 200 -
+INFO:werkzeug:193.2.179.253 - - [21/May/2018 10:57:51] "GET /frames?hw=di%C5%A1ati&rf=reduce_1 HTTP/1.1" 200 -
+INFO:werkzeug:193.2.179.253 - - [21/May/2018 10:57:53] "GET /frames?hw=di%C5%A1ati&rf=reduce_3 HTTP/1.1" 200 -
+INFO:werkzeug:193.2.179.253 - - [21/May/2018 10:58:24] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:193.2.179.253 - - [21/May/2018 10:58:24] "GET /letters HTTP/1.1" 200 -
+INFO:werkzeug:193.2.179.253 - - [21/May/2018 10:58:24] "GET /reduce_functions HTTP/1.1" 200 -
+INFO:werkzeug:193.2.179.253 - - [21/May/2018 11:02:39] "GET /words/d HTTP/1.1" 200 -
+INFO:werkzeug:193.2.179.253 - - [21/May/2018 11:02:53] "GET /frames?hw=di%C5%A1ati&rf=reduce_0 HTTP/1.1" 200 -
+INFO:werkzeug:193.2.179.253 - - [21/May/2018 11:02:53] "GET /frames?hw=di%C5%A1ati&rf=reduce_0 HTTP/1.1" 200 -
+INFO:werkzeug:193.2.179.253 - - [21/May/2018 11:21:58] "GET /frames?hw=di%C5%A1ati&rf=reduce_3 HTTP/1.1" 200 -
+INFO:werkzeug:193.2.179.253 - - [21/May/2018 11:22:20] "GET /frames?hw=di%C5%A1ati&rf=reduce_5 HTTP/1.1" 200 -
+INFO:werkzeug:193.2.179.253 - - [21/May/2018 11:22:20] "GET /user_sense_groups/di%C5%A1ati HTTP/1.1" 200 -
+INFO:werkzeug:193.2.179.253 - - [21/May/2018 11:22:27] "GET /frames?hw=di%C5%A1ati&rf=reduce_0 HTTP/1.1" 200 -
+INFO:werkzeug:193.2.179.253 - - [21/May/2018 11:22:27] "GET /get_sense_ids?collname=user_senses&hw=di%C5%A1ati&sg= HTTP/1.1" 200 -
+INFO:werkzeug:193.2.179.110 - - [21/May/2018 11:25:33] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:193.2.179.110 - - [21/May/2018 11:25:35] "GET /static/lib/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 -
+INFO:werkzeug:193.2.179.110 - - [21/May/2018 11:25:35] "GET /static/style.css HTTP/1.1" 200 -
+INFO:werkzeug:193.2.179.110 - - [21/May/2018 11:25:35] "GET /static/lib/jquery.min.js HTTP/1.1" 200 -
+INFO:werkzeug:193.2.179.110 - - [21/May/2018 11:25:35] "GET /static/lib/bootstrap/js/bootstrap.min.js HTTP/1.1" 200 -
+INFO:werkzeug:193.2.179.110 - - [21/May/2018 11:25:35] "GET /static/script.js HTTP/1.1" 200 -
+INFO:werkzeug:193.2.179.110 - - [21/May/2018 11:25:36] "GET /letters HTTP/1.1" 200 -
+INFO:werkzeug:193.2.179.110 - - [21/May/2018 11:25:36] "GET /reduce_functions HTTP/1.1" 200 -
+INFO:werkzeug:193.2.179.110 - - [21/May/2018 11:25:36] "GET /favicon.ico HTTP/1.1" 404 -
+INFO:werkzeug:193.2.179.110 - - [21/May/2018 11:25:42] "GET /words/b HTTP/1.1" 200 -
+INFO:werkzeug:193.2.179.110 - - [21/May/2018 11:26:00] "GET /frames?hw=bli%C5%BEati&rf=reduce_0 HTTP/1.1" 200 -
+INFO:werkzeug:193.2.179.110 - - [21/May/2018 11:26:08] "GET /frames?hw=bli%C5%BEati&rf=reduce_3 HTTP/1.1" 200 -
+INFO:werkzeug:193.2.179.110 - - [21/May/2018 11:26:41] "GET /words/d HTTP/1.1" 200 -
+INFO:werkzeug:193.2.179.110 - - [21/May/2018 11:26:56] "GET /frames?hw=di%C5%A1ati&rf=reduce_3 HTTP/1.1" 200 -
+INFO:werkzeug:193.2.179.110 - - [21/May/2018 11:27:47] "GET /frames?hw=di%C5%A1ati&rf=reduce_5 HTTP/1.1" 200 -
+INFO:werkzeug:193.2.179.110 - - [21/May/2018 11:27:47] "GET /user_sense_groups/di%C5%A1ati HTTP/1.1" 200 -
+INFO:werkzeug:193.2.179.110 - - [21/May/2018 11:27:53] "GET /frames?hw=di%C5%A1ati&rf=reduce_0 HTTP/1.1" 200 -
+INFO:werkzeug:193.2.179.110 - - [21/May/2018 11:27:54] "GET /get_sense_ids?collname=user_senses&hw=di%C5%A1ati&sg= HTTP/1.1" 200 -
+INFO:werkzeug:193.2.179.253 - - [21/May/2018 11:41:06] "GET /frames?hw=di%C5%A1ati&rf=reduce_3 HTTP/1.1" 200 -
+INFO:werkzeug:193.2.179.253 - - [21/May/2018 11:41:25] "GET /frames?hw=di%C5%A1ati&rf=reduce_5 HTTP/1.1" 200 -
+INFO:werkzeug:193.2.179.253 - - [21/May/2018 11:41:25] "GET /user_sense_groups/di%C5%A1ati HTTP/1.1" 200 -
+INFO:werkzeug:193.2.179.253 - - [21/May/2018 11:41:29] "GET /frames?hw=di%C5%A1ati&rf=reduce_0 HTTP/1.1" 200 -
+INFO:werkzeug:193.2.179.253 - - [21/May/2018 11:41:29] "GET /get_sense_ids?collname=user_senses&hw=di%C5%A1ati&sg= HTTP/1.1" 200 -
+INFO:werkzeug:84.52.177.35 - - [22/May/2018 06:54:49] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:84.52.177.35 - - [22/May/2018 06:54:49] "GET /static/lib/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 -
+INFO:werkzeug:84.52.177.35 - - [22/May/2018 06:54:49] "GET /static/style.css HTTP/1.1" 200 -
+INFO:werkzeug:84.52.177.35 - - [22/May/2018 06:54:49] "GET /static/lib/jquery.min.js HTTP/1.1" 200 -
+INFO:werkzeug:84.52.177.35 - - [22/May/2018 06:54:49] "GET /static/lib/bootstrap/js/bootstrap.min.js HTTP/1.1" 200 -
+INFO:werkzeug:84.52.177.35 - - [22/May/2018 06:54:49] "GET /static/script.js HTTP/1.1" 200 -
+INFO:werkzeug:84.52.177.35 - - [22/May/2018 06:54:50] "GET /letters HTTP/1.1" 200 -
+INFO:werkzeug:84.52.177.35 - - [22/May/2018 06:54:50] "GET /reduce_functions HTTP/1.1" 200 -
+INFO:werkzeug:84.52.177.35 - - [22/May/2018 06:54:50] "GET /favicon.ico HTTP/1.1" 404 -
+INFO:werkzeug:84.52.177.35 - - [22/May/2018 06:55:43] "GET /words/m HTTP/1.1" 200 -
+INFO:werkzeug:84.52.177.35 - - [22/May/2018 06:55:48] "GET /frames?hw=Mary&rf=reduce_0 HTTP/1.1" 200 -
+INFO:werkzeug:84.52.177.35 - - [22/May/2018 06:59:23] "GET /frames?hw=manj&rf=reduce_0 HTTP/1.1" 200 -
+INFO:werkzeug:84.52.177.35 - - [22/May/2018 07:10:30] "GET /frames?hw=Mary&rf=reduce_0 HTTP/1.1" 200 -
+INFO:werkzeug:84.52.177.35 - - [22/May/2018 07:15:17] "GET /frames?hw=manj&rf=reduce_0 HTTP/1.1" 200 -
+INFO:werkzeug:84.52.177.35 - - [22/May/2018 07:17:26] "GET /frames?hw=marati&rf=reduce_0 HTTP/1.1" 200 -
+INFO:werkzeug:84.52.177.35 - - [22/May/2018 07:17:52] "GET /frames?hw=Mary&rf=reduce_0 HTTP/1.1" 200 -
+INFO:werkzeug:84.52.177.35 - - [22/May/2018 07:17:56] "GET /frames?hw=Mary&rf=reduce_3 HTTP/1.1" 200 -
+INFO:werkzeug:84.52.177.35 - - [22/May/2018 07:18:09] "GET /frames?hw=manj&rf=reduce_3 HTTP/1.1" 200 -
+INFO:werkzeug:84.52.177.35 - - [22/May/2018 07:30:20] "GET /frames?hw=miniti&rf=reduce_3 HTTP/1.1" 200 -
+INFO:werkzeug:84.52.177.35 - - [22/May/2018 07:44:39] "GET /frames?hw=mogo%C4%8D&rf=reduce_3 HTTP/1.1" 200 -
+INFO:werkzeug:84.52.177.35 - - [22/May/2018 07:45:54] "GET /frames?hw=mo%C5%BEen&rf=reduce_3 HTTP/1.1" 200 -
+INFO:werkzeug:84.52.177.35 - - [22/May/2018 07:47:44] "GET /frames?hw=me%C5%A1ati&rf=reduce_3 HTTP/1.1" 200 -
+INFO:werkzeug:84.52.177.35 - - [22/May/2018 07:49:07] "GET /frames?hw=mrgoleti&rf=reduce_3 HTTP/1.1" 200 -
+INFO:werkzeug:84.52.177.35 - - [22/May/2018 07:50:35] "GET /words/c HTTP/1.1" 200 -
+INFO:werkzeug:84.52.177.35 - - [22/May/2018 07:50:39] "GET /frames?hw=cefrati&rf=reduce_3 HTTP/1.1" 200 -
+INFO:werkzeug:84.52.177.35 - - [22/May/2018 07:53:24] "GET /frames?hw=ceniti&rf=reduce_3 HTTP/1.1" 200 -
+INFO:werkzeug:84.52.177.35 - - [22/May/2018 07:53:55] "GET /frames?hw=ceniti&rf=reduce_4 HTTP/1.1" 200 -
+INFO:werkzeug:84.52.177.35 - - [22/May/2018 07:54:19] "GET /words/d HTTP/1.1" 200 -
+INFO:werkzeug:84.52.177.35 - - [22/May/2018 07:54:21] "GET /frames?hw=dajati&rf=reduce_4 HTTP/1.1" 200 -
+INFO:werkzeug:84.52.177.35 - - [22/May/2018 07:55:13] "GET /frames?hw=divjati&rf=reduce_4 HTTP/1.1" 200 -
+INFO:werkzeug:84.52.177.35 - - [22/May/2018 07:55:17] "GET /frames?hw=divjati&rf=reduce_5 HTTP/1.1" 200 -
+INFO:werkzeug:84.52.177.35 - - [22/May/2018 07:55:18] "GET /user_sense_groups/divjati HTTP/1.1" 200 -
+INFO:werkzeug:84.52.177.35 - - [22/May/2018 07:55:58] "GET /frames?hw=divjati&rf=reduce_3 HTTP/1.1" 200 -
+INFO:werkzeug:84.52.177.35 - - [22/May/2018 07:56:52] "GET /frames?hw=dober&rf=reduce_3 HTTP/1.1" 200 -
+INFO:werkzeug:84.52.177.35 - - [22/May/2018 07:58:05] "GET /words/c HTTP/1.1" 200 -
+INFO:werkzeug:84.52.177.35 - - [22/May/2018 07:58:06] "GET /frames?hw=cefrati&rf=reduce_3 HTTP/1.1" 200 -
+INFO:werkzeug:84.52.177.35 - - [22/May/2018 07:58:27] "GET /words/a HTTP/1.1" 200 -
+INFO:werkzeug:84.52.177.35 - - [22/May/2018 07:58:30] "GET /words/b HTTP/1.1" 200 -
+INFO:werkzeug:84.52.177.35 - - [22/May/2018 07:58:38] "GET /frames?hw=biti&rf=reduce_3 HTTP/1.1" 200 -
+INFO:werkzeug:84.52.177.35 - - [22/May/2018 08:00:08] "GET /frames?hw=bogat&rf=reduce_3 HTTP/1.1" 200 -
+INFO:werkzeug:84.52.177.35 - - [22/May/2018 08:00:26] "GET /frames?hw=buriti&rf=reduce_3 HTTP/1.1" 200 -
+INFO:werkzeug:84.52.177.35 - - [22/May/2018 08:02:07] "GET /words/%C4%8D HTTP/1.1" 200 -
+INFO:werkzeug:84.52.177.35 - - [22/May/2018 08:02:11] "GET /frames?hw=%C4%8Drka&rf=reduce_3 HTTP/1.1" 200 -
+INFO:werkzeug:84.52.177.35 - - [22/May/2018 08:03:38] "GET /words/d HTTP/1.1" 200 -
+INFO:werkzeug:84.52.177.35 - - [22/May/2018 08:03:53] "GET /frames?hw=dolg&rf=reduce_3 HTTP/1.1" 200 -
+INFO:werkzeug:84.52.177.35 - - [22/May/2018 08:05:43] "GET /frames?hw=dovzeten&rf=reduce_3 HTTP/1.1" 200 -
+INFO:werkzeug:84.52.177.35 - - [22/May/2018 08:06:13] "GET /frames?hw=drug&rf=reduce_3 HTTP/1.1" 200 -
+INFO:werkzeug:84.52.177.35 - - [22/May/2018 08:08:29] "GET /words/e HTTP/1.1" 200 -
+INFO:werkzeug:84.52.177.35 - - [22/May/2018 08:08:32] "GET /frames?hw=edin&rf=reduce_3 HTTP/1.1" 200 -
+INFO:werkzeug:84.52.177.35 - - [22/May/2018 08:12:54] "GET /frames?hw=enak&rf=reduce_3 HTTP/1.1" 200 -
+INFO:werkzeug:82.192.58.162 - - [22/May/2018 16:30:24] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:82.192.58.162 - - [22/May/2018 16:30:24] "GET /static/lib/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 -
+INFO:werkzeug:82.192.58.162 - - [22/May/2018 16:30:24] "GET /static/lib/jquery.min.js HTTP/1.1" 200 -
+INFO:werkzeug:82.192.58.162 - - [22/May/2018 16:30:24] "GET /static/style.css HTTP/1.1" 200 -
+INFO:werkzeug:82.192.58.162 - - [22/May/2018 16:30:24] "GET /static/script.js HTTP/1.1" 200 -
+INFO:werkzeug:82.192.58.162 - - [22/May/2018 16:30:24] "GET /static/lib/bootstrap/js/bootstrap.min.js HTTP/1.1" 200 -
+INFO:werkzeug:82.192.58.162 - - [22/May/2018 16:30:25] "GET /letters HTTP/1.1" 200 -
+INFO:werkzeug:82.192.58.162 - - [22/May/2018 16:30:25] "GET /reduce_functions HTTP/1.1" 200 -
+INFO:werkzeug:176.76.240.19 - - [23/May/2018 10:12:07] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:176.76.240.19 - - [23/May/2018 10:12:16] "GET /static/lib/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 -
+INFO:werkzeug:176.76.240.19 - - [23/May/2018 10:12:22] "GET /static/style.css HTTP/1.1" 200 -
+INFO:werkzeug:176.76.240.19 - - [23/May/2018 10:12:22] "GET /static/lib/jquery.min.js HTTP/1.1" 200 -
+INFO:werkzeug:176.76.240.19 - - [23/May/2018 10:12:25] "GET /static/lib/bootstrap/js/bootstrap.min.js HTTP/1.1" 200 -
+INFO:werkzeug:176.76.240.19 - - [23/May/2018 10:12:25] "GET /static/script.js HTTP/1.1" 200 -
+INFO:werkzeug:176.76.240.19 - - [23/May/2018 10:12:42] "GET /letters HTTP/1.1" 200 -
+INFO:werkzeug:176.76.240.19 - - [23/May/2018 10:12:42] "GET /reduce_functions HTTP/1.1" 200 -
+INFO:werkzeug:176.76.240.19 - - [23/May/2018 10:12:43] "GET /favicon.ico HTTP/1.1" 404 -
+INFO:werkzeug:176.76.240.19 - - [23/May/2018 10:12:43] "GET /favicon.ico HTTP/1.1" 404 -
+INFO:werkzeug:176.76.240.19 - - [23/May/2018 10:12:52] "GET /words/g HTTP/1.1" 200 -
+INFO:werkzeug:176.76.240.19 - - [23/May/2018 10:12:56] "GET /frames?hw=garati&rf=reduce_0 HTTP/1.1" 200 -
+INFO:werkzeug:176.76.240.19 - - [23/May/2018 10:13:24] "GET /frames?hw=garati&rf=reduce_1 HTTP/1.1" 200 -
+INFO:werkzeug:176.76.240.19 - - [23/May/2018 10:13:26] "GET /frames?hw=glasovati&rf=reduce_1 HTTP/1.1" 200 -
+INFO:werkzeug:176.76.240.19 - - [23/May/2018 10:13:33] "GET /frames?hw=glasovati&rf=reduce_1 HTTP/1.1" 200 -
+INFO:werkzeug:176.76.240.19 - - [23/May/2018 10:13:53] "GET /frames?hw=glasovati&rf=reduce_0 HTTP/1.1" 200 -
+INFO:werkzeug:176.76.240.19 - - [23/May/2018 10:13:56] "GET /frames?hw=glasovati&rf=reduce_1 HTTP/1.1" 200 -
+INFO:werkzeug:176.76.240.19 - - [23/May/2018 10:13:59] "GET /frames?hw=glasovati&rf=reduce_0 HTTP/1.1" 200 -
+INFO:werkzeug:176.76.240.19 - - [23/May/2018 10:14:02] "GET /frames?hw=glasovati&rf=reduce_0 HTTP/1.1" 200 -
+INFO:werkzeug:176.76.240.19 - - [23/May/2018 10:14:05] "GET /frames?hw=glasovati&rf=reduce_0 HTTP/1.1" 200 -
+INFO:werkzeug:176.76.240.19 - - [23/May/2018 10:14:08] "GET /frames?hw=glasovati&rf=reduce_1 HTTP/1.1" 200 -
+INFO:werkzeug:176.76.240.19 - - [23/May/2018 10:14:53] "GET /frames?hw=glasovati&rf=reduce_3 HTTP/1.1" 200 -
+INFO:werkzeug:176.76.240.19 - - [23/May/2018 10:15:30] "GET /frames?hw=govoriti&rf=reduce_3 HTTP/1.1" 200 -
+INFO:werkzeug:176.76.240.194 - - [23/May/2018 11:00:45] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:176.76.240.194 - - [23/May/2018 11:00:46] "GET /letters HTTP/1.1" 200 -
+INFO:werkzeug:176.76.240.194 - - [23/May/2018 11:00:46] "GET /reduce_functions HTTP/1.1" 200 -
+INFO:werkzeug:176.76.240.194 - - [23/May/2018 11:00:58] "GET /words/k HTTP/1.1" 200 -
+INFO:werkzeug:176.76.240.194 - - [23/May/2018 11:01:02] "GET /frames?hw=kazati&rf=reduce_0 HTTP/1.1" 200 -
+INFO:werkzeug:176.76.240.194 - - [23/May/2018 11:01:21] "GET /frames?hw=kazati&rf=reduce_5 HTTP/1.1" 200 -
+INFO:werkzeug:176.76.240.194 - - [23/May/2018 11:01:22] "GET /user_sense_groups/kazati HTTP/1.1" 200 -
+INFO:werkzeug:176.76.240.194 - - [23/May/2018 11:01:32] "GET /pick_sense_group/eval1 HTTP/1.1" 200 -
+INFO:werkzeug:176.76.240.194 - - [23/May/2018 11:01:36] "GET /frames?hw=kazati&rf=reduce_5 HTTP/1.1" 200 -
+INFO:werkzeug:176.76.240.194 - - [23/May/2018 11:01:38] "GET /user_sense_groups/kazati HTTP/1.1" 200 -
+INFO:werkzeug:176.76.240.194 - - [23/May/2018 11:02:04] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:176.76.240.194 - - [23/May/2018 11:02:08] "GET /letters HTTP/1.1" 200 -
+INFO:werkzeug:176.76.240.194 - - [23/May/2018 11:02:08] "GET /reduce_functions HTTP/1.1" 200 -
+INFO:werkzeug:176.76.240.194 - - [23/May/2018 11:02:16] "GET /words/k HTTP/1.1" 200 -
+INFO:werkzeug:176.76.240.194 - - [23/May/2018 11:02:18] "GET /frames?hw=kazati&rf=reduce_0 HTTP/1.1" 200 -
+INFO:werkzeug:176.76.240.194 - - [23/May/2018 11:02:20] "GET /frames?hw=kazati&rf=reduce_5 HTTP/1.1" 200 -
+INFO:werkzeug:176.76.240.194 - - [23/May/2018 11:02:20] "GET /user_sense_groups/kazati HTTP/1.1" 200 -
+INFO:werkzeug:176.76.240.194 - - [23/May/2018 11:02:32] "GET /frames?hw=kazati&rf=reduce_0 HTTP/1.1" 200 -
+INFO:werkzeug:176.76.240.194 - - [23/May/2018 11:03:16] "GET /frames?hw=kazati&rf=reduce_4 HTTP/1.1" 200 -
+INFO:werkzeug:176.76.240.194 - - [23/May/2018 11:03:17] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:176.76.240.194 - - [23/May/2018 11:03:19] "GET /static/lib/bootstrap/css/bootstrap.min.css HTTP/1.1" 304 -
+INFO:werkzeug:176.76.240.194 - - [23/May/2018 11:03:19] "GET /static/style.css HTTP/1.1" 304 -
+INFO:werkzeug:176.76.240.194 - - [23/May/2018 11:03:20] "GET /static/lib/jquery.min.js HTTP/1.1" 304 -
+INFO:werkzeug:176.76.240.194 - - [23/May/2018 11:03:20] "GET /static/lib/bootstrap/js/bootstrap.min.js HTTP/1.1" 304 -
+INFO:werkzeug:176.76.240.194 - - [23/May/2018 11:03:21] "GET /static/script.js HTTP/1.1" 304 -
+INFO:werkzeug:176.76.240.194 - - [23/May/2018 11:03:29] "GET /letters HTTP/1.1" 200 -
+INFO:werkzeug:176.76.240.194 - - [23/May/2018 11:03:30] "GET /reduce_functions HTTP/1.1" 200 -
+INFO:werkzeug:176.76.240.194 - - [23/May/2018 11:03:31] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:176.76.240.194 - - [23/May/2018 11:03:32] "GET /static/lib/bootstrap/css/bootstrap.min.css HTTP/1.1" 304 -
+INFO:werkzeug:176.76.240.194 - - [23/May/2018 11:03:32] "GET /static/style.css HTTP/1.1" 304 -
+INFO:werkzeug:176.76.240.194 - - [23/May/2018 11:03:33] "GET /static/lib/jquery.min.js HTTP/1.1" 304 -
+INFO:werkzeug:176.76.240.194 - - [23/May/2018 11:03:33] "GET /static/lib/bootstrap/js/bootstrap.min.js HTTP/1.1" 304 -
+INFO:werkzeug:176.76.240.194 - - [23/May/2018 11:03:37] "GET /static/script.js HTTP/1.1" 304 -
+INFO:werkzeug:176.76.240.194 - - [23/May/2018 11:03:39] "GET /letters HTTP/1.1" 200 -
+INFO:werkzeug:176.76.240.194 - - [23/May/2018 11:03:39] "GET /reduce_functions HTTP/1.1" 200 -
+INFO:werkzeug:176.76.240.194 - - [23/May/2018 11:03:45] "GET /words/k HTTP/1.1" 200 -
+INFO:werkzeug:176.76.240.194 - - [23/May/2018 11:03:55] "GET /frames?hw=kazati&rf=reduce_5 HTTP/1.1" 200 -
+INFO:werkzeug:176.76.240.194 - - [23/May/2018 11:03:59] "GET /user_sense_groups/kazati HTTP/1.1" 200 -
+INFO:werkzeug:176.76.240.194 - - [23/May/2018 11:04:01] "GET /frames?hw=kazati&rf=reduce_0 HTTP/1.1" 200 -
+INFO:werkzeug:176.76.240.194 - - [23/May/2018 11:04:05] "GET /get_sense_ids?collname=user_senses&hw=kazati&sg=eval1 HTTP/1.1" 200 -
+INFO:werkzeug:176.76.240.194 - - [23/May/2018 11:09:30] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:176.76.240.194 - - [23/May/2018 11:09:31] "GET /letters HTTP/1.1" 200 -
+INFO:werkzeug:176.76.240.194 - - [23/May/2018 11:09:33] "GET /words/j HTTP/1.1" 200 -
+INFO:werkzeug:176.76.240.194 - - [23/May/2018 11:09:33] "GET /reduce_functions HTTP/1.1" 200 -
+INFO:werkzeug:176.76.240.194 - - [23/May/2018 11:09:36] "GET /words/m HTTP/1.1" 200 -
+INFO:werkzeug:176.76.240.194 - - [23/May/2018 11:09:38] "GET /words/p HTTP/1.1" 200 -
+INFO:werkzeug:176.76.240.194 - - [23/May/2018 11:09:40] "GET /frames?hw=pasti&rf=reduce_0 HTTP/1.1" 200 -
+INFO:werkzeug:176.76.240.194 - - [23/May/2018 11:09:43] "GET /frames?hw=pasti&rf=reduce_5 HTTP/1.1" 200 -
+INFO:werkzeug:176.76.240.194 - - [23/May/2018 11:09:43] "GET /user_sense_groups/pasti HTTP/1.1" 200 -
+INFO:werkzeug:176.76.240.194 - - [23/May/2018 11:09:47] "GET /pick_sense_group/test1 HTTP/1.1" 200 -
+INFO:werkzeug:176.76.240.194 - - [23/May/2018 11:09:47] "GET /frames?hw=pasti&rf=reduce_5 HTTP/1.1" 200 -
+INFO:werkzeug:176.76.240.194 - - [23/May/2018 11:09:48] "GET /user_sense_groups/pasti HTTP/1.1" 200 -
+INFO:werkzeug:176.76.240.194 - - [23/May/2018 11:09:51] "GET /frames?hw=pasti&rf=reduce_0 HTTP/1.1" 200 -
+INFO:werkzeug:176.76.240.194 - - [23/May/2018 11:09:51] "GET /get_sense_ids?collname=user_senses&hw=pasti&sg=test1 HTTP/1.1" 200 -
+INFO:werkzeug:176.76.240.194 - - [23/May/2018 11:10:02] "POST /user_senses HTTP/1.1" 200 -
+INFO:werkzeug:176.76.240.194 - - [23/May/2018 11:10:02] "GET /pick_sense_group/test1 HTTP/1.1" 200 -
+INFO:werkzeug:176.76.240.194 - - [23/May/2018 11:10:02] "GET /user_sense_groups/pasti HTTP/1.1" 200 -
+INFO:werkzeug:176.76.240.194 - - [23/May/2018 11:10:02] "GET /frames?hw=pasti&rf=reduce_5 HTTP/1.1" 200 -
+INFO:werkzeug:176.76.240.194 - - [23/May/2018 11:10:03] "GET /user_sense_groups/pasti HTTP/1.1" 200 -
+INFO:werkzeug:176.76.240.194 - - [23/May/2018 11:10:22] "GET /frames?hw=pasti&rf=reduce_0 HTTP/1.1" 200 -
+INFO:werkzeug:176.76.240.194 - - [23/May/2018 11:10:24] "GET /frames?hw=pasti&rf=reduce_5 HTTP/1.1" 200 -
+INFO:werkzeug:176.76.240.194 - - [23/May/2018 11:10:24] "GET /user_sense_groups/pasti HTTP/1.1" 200 -
+INFO:werkzeug:176.76.240.194 - - [23/May/2018 11:10:26] "GET /pick_sense_group/test1 HTTP/1.1" 200 -
+INFO:werkzeug:176.76.240.194 - - [23/May/2018 11:10:26] "GET /frames?hw=pasti&rf=reduce_5 HTTP/1.1" 200 -
+INFO:werkzeug:176.76.240.194 - - [23/May/2018 11:10:27] "GET /user_sense_groups/pasti HTTP/1.1" 200 -
+INFO:werkzeug:176.76.240.194 - - [23/May/2018 11:10:29] "GET /frames?hw=pasti&rf=reduce_0 HTTP/1.1" 200 -
+INFO:werkzeug:176.76.240.194 - - [23/May/2018 11:10:29] "GET /get_sense_ids?collname=user_senses&hw=pasti&sg=test1 HTTP/1.1" 200 -
+INFO:werkzeug:176.76.240.194 - - [23/May/2018 11:10:44] "POST /user_senses HTTP/1.1" 200 -
+INFO:werkzeug:176.76.240.194 - - [23/May/2018 11:10:44] "GET /pick_sense_group/test1 HTTP/1.1" 200 -
+INFO:werkzeug:176.76.240.194 - - [23/May/2018 11:10:44] "GET /user_sense_groups/pasti HTTP/1.1" 200 -
+INFO:werkzeug:176.76.240.194 - - [23/May/2018 11:10:44] "GET /frames?hw=pasti&rf=reduce_5 HTTP/1.1" 200 -
+INFO:werkzeug:176.76.240.194 - - [23/May/2018 11:10:44] "GET /user_sense_groups/pasti HTTP/1.1" 200 -
+INFO:werkzeug:176.76.240.194 - - [23/May/2018 11:10:57] "GET /pick_sense_group/test1 HTTP/1.1" 200 -
+INFO:werkzeug:176.76.240.194 - - [23/May/2018 11:10:58] "GET /frames?hw=pasti&rf=reduce_5 HTTP/1.1" 200 -
+INFO:werkzeug:176.76.240.194 - - [23/May/2018 11:10:58] "GET /user_sense_groups/pasti HTTP/1.1" 200 -
+INFO:werkzeug:176.76.240.194 - - [23/May/2018 11:11:43] "GET /pick_sense_group/eval1 HTTP/1.1" 200 -
+INFO:werkzeug:176.76.240.194 - - [23/May/2018 11:11:43] "GET /frames?hw=pasti&rf=reduce_5 HTTP/1.1" 200 -
+INFO:werkzeug:176.76.240.194 - - [23/May/2018 11:11:44] "GET /user_sense_groups/pasti HTTP/1.1" 200 -
+INFO:werkzeug:176.76.240.194 - - [23/May/2018 11:11:46] "GET /pick_sense_group/test1 HTTP/1.1" 200 -
+INFO:werkzeug:176.76.240.194 - - [23/May/2018 11:11:46] "GET /frames?hw=pasti&rf=reduce_5 HTTP/1.1" 200 -
+INFO:werkzeug:176.76.240.194 - - [23/May/2018 11:11:46] "GET /user_sense_groups/pasti HTTP/1.1" 200 -
+INFO:werkzeug:176.76.240.194 - - [23/May/2018 11:11:48] "GET /frames?hw=pasti&rf=reduce_0 HTTP/1.1" 200 -
+INFO:werkzeug:176.76.240.194 - - [23/May/2018 11:11:48] "GET /get_sense_ids?collname=user_senses&hw=pasti&sg=test1 HTTP/1.1" 200 -
+INFO:werkzeug:176.76.240.194 - - [23/May/2018 11:12:27] "POST /user_senses HTTP/1.1" 200 -
+INFO:werkzeug:176.76.240.194 - - [23/May/2018 11:12:27] "GET /pick_sense_group/test1 HTTP/1.1" 200 -
+INFO:werkzeug:176.76.240.194 - - [23/May/2018 11:12:28] "GET /user_sense_groups/pasti HTTP/1.1" 200 -
+INFO:werkzeug:176.76.240.194 - - [23/May/2018 11:12:28] "GET /frames?hw=pasti&rf=reduce_5 HTTP/1.1" 200 -
+INFO:werkzeug:176.76.240.194 - - [23/May/2018 11:12:28] "GET /user_sense_groups/pasti HTTP/1.1" 200 -
+INFO:werkzeug:176.76.240.194 - - [23/May/2018 11:13:02] "GET /pick_sense_group/test1 HTTP/1.1" 200 -
+INFO:werkzeug:176.76.240.194 - - [23/May/2018 11:13:02] "GET /frames?hw=pasti&rf=reduce_5 HTTP/1.1" 200 -
+INFO:werkzeug:176.76.240.194 - - [23/May/2018 11:13:02] "GET /user_sense_groups/pasti HTTP/1.1" 200 -
+INFO:werkzeug:176.76.240.194 - - [23/May/2018 11:13:48] "GET /frames?hw=pasti&rf=reduce_0 HTTP/1.1" 200 -
+INFO:werkzeug:176.76.240.194 - - [23/May/2018 11:13:48] "GET /get_sense_ids?collname=user_senses&hw=pasti&sg=test1 HTTP/1.1" 200 -
+INFO:werkzeug:176.76.240.194 - - [23/May/2018 11:14:00] "POST /user_senses HTTP/1.1" 200 -
+INFO:werkzeug:176.76.240.194 - - [23/May/2018 11:14:00] "GET /pick_sense_group/test1 HTTP/1.1" 200 -
+INFO:werkzeug:176.76.240.194 - - [23/May/2018 11:14:00] "GET /user_sense_groups/pasti HTTP/1.1" 200 -
+INFO:werkzeug:176.76.240.194 - - [23/May/2018 11:14:00] "GET /frames?hw=pasti&rf=reduce_5 HTTP/1.1" 200 -
+INFO:werkzeug:176.76.240.194 - - [23/May/2018 11:14:00] "GET /user_sense_groups/pasti HTTP/1.1" 200 -
+INFO:werkzeug:176.76.240.194 - - [23/May/2018 11:14:15] "GET /pick_sense_group/eval1 HTTP/1.1" 200 -
+INFO:werkzeug:176.76.240.194 - - [23/May/2018 11:14:15] "GET /frames?hw=pasti&rf=reduce_5 HTTP/1.1" 200 -
+INFO:werkzeug:176.76.240.194 - - [23/May/2018 11:14:15] "GET /user_sense_groups/pasti HTTP/1.1" 200 -
+INFO:werkzeug:193.2.178.58 - - [23/May/2018 11:16:27] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:193.2.178.58 - - [23/May/2018 11:16:27] "GET /static/lib/bootstrap/css/bootstrap.min.css HTTP/1.1" 304 -
+INFO:werkzeug:193.2.178.58 - - [23/May/2018 11:16:27] "GET /static/style.css HTTP/1.1" 304 -
+INFO:werkzeug:193.2.178.58 - - [23/May/2018 11:16:27] "GET /static/lib/jquery.min.js HTTP/1.1" 304 -
+INFO:werkzeug:193.2.178.58 - - [23/May/2018 11:16:27] "GET /static/lib/bootstrap/js/bootstrap.min.js HTTP/1.1" 304 -
+INFO:werkzeug:193.2.178.58 - - [23/May/2018 11:16:27] "GET /static/script.js HTTP/1.1" 304 -
+INFO:werkzeug:193.2.178.58 - - [23/May/2018 11:16:28] "GET /letters HTTP/1.1" 200 -
+INFO:werkzeug:193.2.178.58 - - [23/May/2018 11:16:28] "GET /reduce_functions HTTP/1.1" 200 -
+INFO:werkzeug:193.2.178.58 - - [23/May/2018 11:16:29] "GET /favicon.ico HTTP/1.1" 404 -
+INFO:werkzeug:193.2.178.58 - - [23/May/2018 11:17:56] "GET /words/m HTTP/1.1" 200 -
+INFO:werkzeug:193.2.178.58 - - [23/May/2018 11:18:28] "GET /frames?hw=Mary&rf=reduce_0 HTTP/1.1" 200 -
+INFO:werkzeug:193.2.178.58 - - [23/May/2018 11:22:02] "GET /frames?hw=manj&rf=reduce_0 HTTP/1.1" 200 -
+INFO:werkzeug:193.2.178.58 - - [23/May/2018 11:22:29] "GET /frames?hw=mogo%C4%8D&rf=reduce_0 HTTP/1.1" 200 -
+INFO:werkzeug:193.2.178.58 - - [23/May/2018 11:24:24] "GET /frames?hw=mogo%C4%8D&rf=reduce_3 HTTP/1.1" 200 -
+INFO:werkzeug:193.2.178.58 - - [23/May/2018 11:26:30] "GET /frames?hw=mogo%C4%8D&rf=reduce_4 HTTP/1.1" 200 -
+INFO:werkzeug:193.2.178.58 - - [23/May/2018 11:26:34] "GET /frames?hw=mogo%C4%8D&rf=reduce_5 HTTP/1.1" 200 -
+INFO:werkzeug:193.2.178.58 - - [23/May/2018 11:26:34] "GET /user_sense_groups/mogo%C4%8D HTTP/1.1" 200 -
+INFO:werkzeug:193.2.178.58 - - [23/May/2018 11:26:41] "GET /frames?hw=mogo%C4%8D&rf=reduce_0 HTTP/1.1" 200 -
+INFO:werkzeug:193.2.178.58 - - [23/May/2018 11:26:41] "GET /get_sense_ids?collname=user_senses&hw=mogo%C4%8D&sg= HTTP/1.1" 200 -
+INFO:werkzeug:193.2.178.58 - - [23/May/2018 11:28:10] "GET /frames?hw=mogo%C4%8D&rf=reduce_3 HTTP/1.1" 200 -
+INFO:werkzeug:193.2.178.58 - - [23/May/2018 11:32:55] "GET /words/g HTTP/1.1" 200 -
+INFO:werkzeug:193.2.178.58 - - [23/May/2018 11:33:00] "GET /frames?hw=ganjen&rf=reduce_3 HTTP/1.1" 200 -
+INFO:werkzeug:193.2.178.58 - - [23/May/2018 11:35:15] "GET /words/m HTTP/1.1" 200 -
+INFO:werkzeug:193.2.178.58 - - [23/May/2018 11:35:19] "GET /frames?hw=Mary&rf=reduce_3 HTTP/1.1" 200 -
+INFO:werkzeug:193.2.178.58 - - [23/May/2018 11:35:19] "GET /frames?hw=Mary&rf=reduce_3 HTTP/1.1" 200 -
+INFO:werkzeug:193.2.178.58 - - [23/May/2018 11:35:32] "GET /frames?hw=Mary&rf=reduce_1 HTTP/1.1" 200 -
+INFO:werkzeug:193.2.178.58 - - [23/May/2018 11:35:35] "GET /frames?hw=Mary&rf=reduce_3 HTTP/1.1" 200 -
+INFO:werkzeug:193.2.178.58 - - [23/May/2018 11:43:20] "GET /words/%C4%8D HTTP/1.1" 200 -
+INFO:werkzeug:193.2.178.58 - - [23/May/2018 11:43:28] "GET /frames?hw=%C4%8Drka&rf=reduce_3 HTTP/1.1" 200 -
+INFO:werkzeug:193.2.178.58 - - [23/May/2018 11:43:58] "GET /words/z HTTP/1.1" 200 -
+INFO:werkzeug:193.2.178.58 - - [23/May/2018 11:45:05] "GET /words/m HTTP/1.1" 200 -
+INFO:werkzeug:193.2.178.58 - - [23/May/2018 11:45:07] "GET /frames?hw=manj&rf=reduce_3 HTTP/1.1" 200 -
+INFO:werkzeug:193.2.178.58 - - [23/May/2018 11:45:30] "GET /frames?hw=mogo%C4%8D&rf=reduce_3 HTTP/1.1" 200 -
+INFO:werkzeug:193.2.178.58 - - [23/May/2018 11:49:43] "GET /words/d HTTP/1.1" 200 -
+INFO:werkzeug:193.2.178.58 - - [23/May/2018 11:49:51] "GET /frames?hw=dolg&rf=reduce_3 HTTP/1.1" 200 -
+INFO:werkzeug:193.2.178.58 - - [23/May/2018 11:51:18] "GET /frames?hw=drug&rf=reduce_3 HTTP/1.1" 200 -
+INFO:werkzeug:193.2.178.58 - - [23/May/2018 11:52:39] "GET /words/e HTTP/1.1" 200 -
+INFO:werkzeug:193.2.178.58 - - [23/May/2018 11:52:41] "GET /frames?hw=edin&rf=reduce_3 HTTP/1.1" 200 -
+INFO:werkzeug:193.2.178.58 - - [23/May/2018 11:53:47] "GET /words/m HTTP/1.1" 200 -
+INFO:werkzeug:193.2.178.58 - - [23/May/2018 11:53:49] "GET /frames?hw=manj&rf=reduce_3 HTTP/1.1" 200 -
+INFO:werkzeug:193.2.178.58 - - [23/May/2018 11:59:04] "GET /frames?hw=mrgoleti&rf=reduce_3 HTTP/1.1" 200 -
+INFO:werkzeug:193.2.178.58 - - [23/May/2018 11:59:04] "GET /frames?hw=mrgoleti&rf=reduce_3 HTTP/1.1" 200 -
+INFO:werkzeug:193.2.178.58 - - [23/May/2018 12:06:30] "GET /words/d HTTP/1.1" 200 -
+INFO:werkzeug:193.2.178.58 - - [23/May/2018 12:06:32] "GET /frames?hw=divjati&rf=reduce_3 HTTP/1.1" 200 -
+INFO:werkzeug:193.2.178.58 - - [23/May/2018 12:11:17] "GET /words/m HTTP/1.1" 200 -
+INFO:werkzeug:193.2.178.58 - - [23/May/2018 12:11:21] "GET /frames?hw=manj&rf=reduce_3 HTTP/1.1" 200 -
+INFO:werkzeug:193.2.178.58 - - [23/May/2018 12:25:38] "GET /words/m HTTP/1.1" 200 -
+INFO:werkzeug:193.2.178.58 - - [23/May/2018 12:25:47] "GET /frames?hw=mrgoleti&rf=reduce_3 HTTP/1.1" 200 -
+INFO:werkzeug:193.2.178.58 - - [23/May/2018 12:26:14] "GET /words/d HTTP/1.1" 200 -
+INFO:werkzeug:193.2.178.58 - - [23/May/2018 12:26:17] "GET /frames?hw=divjati&rf=reduce_3 HTTP/1.1" 200 -
+INFO:werkzeug:193.2.178.58 - - [23/May/2018 12:27:05] "GET /words/%C5%A1 HTTP/1.1" 200 -
+INFO:werkzeug:193.2.178.58 - - [23/May/2018 12:27:08] "GET /frames?hw=divjati&rf=reduce_5 HTTP/1.1" 200 -
+INFO:werkzeug:193.2.178.58 - - [23/May/2018 12:27:08] "GET /user_sense_groups/divjati HTTP/1.1" 200 -
+INFO:werkzeug:193.2.178.58 - - [23/May/2018 12:27:11] "GET /frames?hw=divjati&rf=reduce_0 HTTP/1.1" 200 -
+INFO:werkzeug:193.2.178.58 - - [23/May/2018 12:27:11] "GET /get_sense_ids?collname=user_senses&hw=divjati&sg= HTTP/1.1" 200 -
+INFO:werkzeug:193.2.178.58 - - [23/May/2018 12:28:45] "GET /frames?hw=divjati&rf=reduce_3 HTTP/1.1" 200 -
+INFO:werkzeug:193.2.178.58 - - [23/May/2018 12:31:35] "GET /frames?hw=divjati&rf=reduce_5 HTTP/1.1" 200 -
+INFO:werkzeug:193.2.178.58 - - [23/May/2018 12:31:35] "GET /user_sense_groups/divjati HTTP/1.1" 200 -
+INFO:werkzeug:193.2.178.58 - - [23/May/2018 12:31:38] "GET /frames?hw=divjati&rf=reduce_0 HTTP/1.1" 200 -
+INFO:werkzeug:193.2.178.58 - - [23/May/2018 12:31:38] "GET /get_sense_ids?collname=user_senses&hw=divjati&sg= HTTP/1.1" 200 -
+INFO:werkzeug:193.2.178.58 - - [23/May/2018 12:31:43] "GET /frames?hw=divjati&rf=reduce_3 HTTP/1.1" 200 -
+INFO:werkzeug:193.2.178.58 - - [23/May/2018 12:31:46] "GET /frames?hw=divjati&rf=reduce_5 HTTP/1.1" 200 -
+INFO:werkzeug:193.2.178.58 - - [23/May/2018 12:31:46] "GET /user_sense_groups/divjati HTTP/1.1" 200 -
+INFO:werkzeug:193.2.178.58 - - [23/May/2018 12:31:48] "GET /frames?hw=divjati&rf=reduce_0 HTTP/1.1" 200 -
+INFO:werkzeug:193.2.178.58 - - [23/May/2018 12:31:48] "GET /get_sense_ids?collname=user_senses&hw=divjati&sg= HTTP/1.1" 200 -
+INFO:werkzeug:193.2.178.58 - - [23/May/2018 12:33:22] "GET /words/c HTTP/1.1" 200 -
+INFO:werkzeug:193.2.178.58 - - [23/May/2018 12:33:25] "GET /frames?hw=cefrati&rf=reduce_5 HTTP/1.1" 200 -
+INFO:werkzeug:193.2.178.58 - - [23/May/2018 12:33:25] "GET /user_sense_groups/cefrati HTTP/1.1" 200 -
+INFO:werkzeug:193.2.178.58 - - [23/May/2018 12:33:29] "GET /frames?hw=cefrati&rf=reduce_3 HTTP/1.1" 200 -
+INFO:werkzeug:193.2.178.58 - - [23/May/2018 12:35:37] "GET /words/d HTTP/1.1" 200 -
+INFO:werkzeug:193.2.178.58 - - [23/May/2018 12:35:40] "GET /frames?hw=dober&rf=reduce_3 HTTP/1.1" 200 -
+INFO:werkzeug:193.2.178.58 - - [23/May/2018 12:36:13] "GET /frames?hw=dober&rf=reduce_4 HTTP/1.1" 200 -
+INFO:werkzeug:82.192.58.162 - - [23/May/2018 19:02:14] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:82.192.58.162 - - [23/May/2018 19:02:14] "GET /static/lib/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 -
+INFO:werkzeug:82.192.58.162 - - [23/May/2018 19:02:14] "GET /static/lib/bootstrap/js/bootstrap.min.js HTTP/1.1" 200 -
+INFO:werkzeug:82.192.58.162 - - [23/May/2018 19:02:14] "GET /static/style.css HTTP/1.1" 200 -
+INFO:werkzeug:82.192.58.162 - - [23/May/2018 19:02:14] "GET /static/script.js HTTP/1.1" 200 -
+INFO:werkzeug:82.192.58.162 - - [23/May/2018 19:02:14] "GET /static/lib/jquery.min.js HTTP/1.1" 200 -
+INFO:werkzeug:82.192.58.162 - - [23/May/2018 19:02:16] "GET /letters HTTP/1.1" 200 -
+INFO:werkzeug:82.192.58.162 - - [23/May/2018 19:02:16] "GET /reduce_functions HTTP/1.1" 200 -
+ERROR:werkzeug:77.72.83.111 - - [24/May/2018 11:28:04] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie:')
+INFO:werkzeug:77.72.83.111 - - [24/May/2018 11:28:04] "  /*à     Cookie: mstshash=Administr" HTTPStatus.BAD_REQUEST -
+ERROR:werkzeug:191.101.167.7 - - [26/May/2018 13:13:33] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie:')
+INFO:werkzeug:191.101.167.7 - - [26/May/2018 13:13:33] "  /*à     Cookie: mstshash=Administr" HTTPStatus.BAD_REQUEST -
+INFO:werkzeug:82.192.58.162 - - [27/May/2018 20:05:18] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:82.192.58.162 - - [27/May/2018 20:05:18] "GET /static/lib/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 -
+INFO:werkzeug:82.192.58.162 - - [27/May/2018 20:05:18] "GET /static/lib/bootstrap/js/bootstrap.min.js HTTP/1.1" 200 -
+INFO:werkzeug:82.192.58.162 - - [27/May/2018 20:05:18] "GET /static/style.css HTTP/1.1" 200 -
+INFO:werkzeug:82.192.58.162 - - [27/May/2018 20:05:18] "GET /static/script.js HTTP/1.1" 200 -
+INFO:werkzeug:82.192.58.162 - - [27/May/2018 20:05:18] "GET /static/lib/jquery.min.js HTTP/1.1" 200 -
+INFO:werkzeug:82.192.58.162 - - [27/May/2018 20:05:21] "GET /reduce_functions HTTP/1.1" 200 -
+INFO:werkzeug:82.192.58.162 - - [27/May/2018 20:05:21] "GET /letters HTTP/1.1" 200 -
+ERROR:werkzeug:191.101.167.7 - - [28/May/2018 20:30:43] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie:')
+INFO:werkzeug:191.101.167.7 - - [28/May/2018 20:30:43] "  /*à     Cookie: mstshash=Administr" HTTPStatus.BAD_REQUEST -
+ERROR:werkzeug:31.207.47.40 - - [31/May/2018 11:40:12] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie:')
+INFO:werkzeug:31.207.47.40 - - [31/May/2018 11:40:12] "  /*à     Cookie: mstshash=Administr" HTTPStatus.BAD_REQUEST -
+INFO:werkzeug:84.52.169.182 - - [31/May/2018 23:20:00] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:84.52.169.182 - - [31/May/2018 23:20:01] "GET /static/lib/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 -
+INFO:werkzeug:84.52.169.182 - - [31/May/2018 23:20:01] "GET /static/style.css HTTP/1.1" 200 -
+INFO:werkzeug:84.52.169.182 - - [31/May/2018 23:20:01] "GET /static/lib/jquery.min.js HTTP/1.1" 200 -
+INFO:werkzeug:84.52.169.182 - - [31/May/2018 23:20:01] "GET /static/lib/bootstrap/js/bootstrap.min.js HTTP/1.1" 200 -
+INFO:werkzeug:84.52.169.182 - - [31/May/2018 23:20:01] "GET /static/script.js HTTP/1.1" 200 -
+INFO:werkzeug:84.52.169.182 - - [31/May/2018 23:20:01] "GET /letters HTTP/1.1" 200 -
+INFO:werkzeug:84.52.169.182 - - [31/May/2018 23:20:01] "GET /reduce_functions HTTP/1.1" 200 -
+INFO:werkzeug:84.52.169.182 - - [31/May/2018 23:20:01] "GET /favicon.ico HTTP/1.1" 404 -
+INFO:werkzeug:84.52.169.182 - - [31/May/2018 23:20:10] "GET /words/e HTTP/1.1" 200 -
+INFO:werkzeug:84.52.169.182 - - [31/May/2018 23:20:16] "GET /words/m HTTP/1.1" 200 -
+INFO:werkzeug:84.52.169.182 - - [31/May/2018 23:20:16] "GET /words/m HTTP/1.1" 200 -
+INFO:werkzeug:84.52.169.182 - - [31/May/2018 23:20:33] "GET /words/o HTTP/1.1" 200 -
+INFO:werkzeug:84.52.169.182 - - [31/May/2018 23:21:03] "GET /frames?hw=opazovati&rf=reduce_0 HTTP/1.1" 200 -
+INFO:werkzeug:84.52.169.182 - - [31/May/2018 23:21:16] "GET /frames?hw=opa%C5%BEati&rf=reduce_0 HTTP/1.1" 200 -
+INFO:werkzeug:84.52.169.182 - - [31/May/2018 23:21:18] "GET /frames?hw=opazovati&rf=reduce_0 HTTP/1.1" 200 -
+INFO:werkzeug:84.52.169.182 - - [31/May/2018 23:21:30] "GET /frames?hw=opazovati&rf=reduce_3 HTTP/1.1" 200 -
+INFO:werkzeug:84.52.169.182 - - [31/May/2018 23:21:43] "GET /frames?hw=opazovati&rf=reduce_1 HTTP/1.1" 200 -
+INFO:werkzeug:84.52.169.182 - - [31/May/2018 23:21:45] "GET /frames?hw=opazovati&rf=reduce_4 HTTP/1.1" 200 -
+INFO:werkzeug:84.52.169.182 - - [31/May/2018 23:21:49] "GET /frames?hw=opazovati&rf=reduce_5 HTTP/1.1" 200 -
+INFO:werkzeug:84.52.169.182 - - [31/May/2018 23:21:49] "GET /user_sense_groups/opazovati HTTP/1.1" 200 -
+INFO:werkzeug:84.52.169.182 - - [31/May/2018 23:21:51] "GET /frames?hw=opazovati&rf=reduce_3 HTTP/1.1" 200 -
+INFO:werkzeug:84.52.169.182 - - [05/Jun/2018 22:45:30] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:84.52.169.182 - - [05/Jun/2018 22:45:30] "GET /static/lib/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 -
+INFO:werkzeug:84.52.169.182 - - [05/Jun/2018 22:45:30] "GET /static/style.css HTTP/1.1" 200 -
+INFO:werkzeug:84.52.169.182 - - [05/Jun/2018 22:45:30] "GET /static/lib/jquery.min.js HTTP/1.1" 200 -
+INFO:werkzeug:84.52.169.182 - - [05/Jun/2018 22:45:30] "GET /static/lib/bootstrap/js/bootstrap.min.js HTTP/1.1" 200 -
+INFO:werkzeug:84.52.169.182 - - [05/Jun/2018 22:45:30] "GET /static/script.js HTTP/1.1" 200 -
+INFO:werkzeug:84.52.169.182 - - [05/Jun/2018 22:45:30] "GET /letters HTTP/1.1" 200 -
+INFO:werkzeug:84.52.169.182 - - [05/Jun/2018 22:45:30] "GET /reduce_functions HTTP/1.1" 200 -
+INFO:werkzeug:178.172.46.75 - - [06/Jun/2018 10:04:36] "GET /words/g HTTP/1.1" 200 -
+INFO:werkzeug:178.172.46.75 - - [06/Jun/2018 10:04:39] "GET /words/p HTTP/1.1" 200 -
+INFO:werkzeug:176.76.243.223 - - [07/Jun/2018 17:33:14] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:176.76.243.223 - - [07/Jun/2018 17:33:14] "GET /static/lib/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 -
+INFO:werkzeug:176.76.243.223 - - [07/Jun/2018 17:33:14] "GET /static/style.css HTTP/1.1" 200 -
+INFO:werkzeug:176.76.243.223 - - [07/Jun/2018 17:33:14] "GET /static/lib/jquery.min.js HTTP/1.1" 200 -
+INFO:werkzeug:176.76.243.223 - - [07/Jun/2018 17:33:14] "GET /static/script.js HTTP/1.1" 200 -
+INFO:werkzeug:176.76.243.223 - - [07/Jun/2018 17:33:14] "GET /static/lib/bootstrap/js/bootstrap.min.js HTTP/1.1" 200 -
+INFO:werkzeug:176.76.243.223 - - [07/Jun/2018 17:33:14] "GET /letters HTTP/1.1" 200 -
+INFO:werkzeug:176.76.243.223 - - [07/Jun/2018 17:33:14] "GET /reduce_functions HTTP/1.1" 200 -
+INFO:werkzeug:176.76.243.223 - - [07/Jun/2018 17:33:14] "GET /favicon.ico HTTP/1.1" 404 -
+INFO:werkzeug:176.76.243.223 - - [07/Jun/2018 17:34:31] "GET /words/f HTTP/1.1" 200 -
+INFO:werkzeug:176.76.243.223 - - [07/Jun/2018 17:34:35] "GET /frames?hw=financirati&rf=reduce_0 HTTP/1.1" 200 -
+INFO:werkzeug:176.76.243.223 - - [07/Jun/2018 17:34:36] "GET /frames?hw=fotokopirati&rf=reduce_0 HTTP/1.1" 200 -
+INFO:werkzeug:176.76.243.223 - - [07/Jun/2018 17:34:40] "GET /frames?hw=fotokopirati&rf=reduce_3 HTTP/1.1" 200 -
+INFO:werkzeug:176.76.243.223 - - [07/Jun/2018 17:34:43] "GET /words/m HTTP/1.1" 200 -
+INFO:werkzeug:176.76.243.223 - - [07/Jun/2018 17:34:45] "GET /frames?hw=manjkati&rf=reduce_3 HTTP/1.1" 200 -
+ERROR:werkzeug:185.209.0.10 - - [09/Jun/2018 21:46:54] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie:')
+INFO:werkzeug:185.209.0.10 - - [09/Jun/2018 21:46:54] "  /*à     Cookie: mstshash=Administr" HTTPStatus.BAD_REQUEST -
+ERROR:werkzeug:185.209.0.10 - - [20/Jun/2018 00:44:35] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie:')
+INFO:werkzeug:185.209.0.10 - - [20/Jun/2018 00:44:35] "  /*à     Cookie: mstshash=Administr" HTTPStatus.BAD_REQUEST -
+INFO:werkzeug:31.15.194.157 - - [21/Jun/2018 11:34:44] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:31.15.194.157 - - [21/Jun/2018 11:34:45] "GET /static/lib/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 -
+INFO:werkzeug:31.15.194.157 - - [21/Jun/2018 11:34:45] "GET /static/lib/jquery.min.js HTTP/1.1" 200 -
+INFO:werkzeug:31.15.194.157 - - [21/Jun/2018 11:34:45] "GET /static/style.css HTTP/1.1" 200 -
+INFO:werkzeug:31.15.194.157 - - [21/Jun/2018 11:34:45] "GET /static/script.js HTTP/1.1" 200 -
+INFO:werkzeug:31.15.194.157 - - [21/Jun/2018 11:34:45] "GET /static/lib/bootstrap/js/bootstrap.min.js HTTP/1.1" 200 -
+INFO:werkzeug:31.15.194.157 - - [21/Jun/2018 11:34:47] "GET /favicon.ico HTTP/1.1" 404 -
+INFO:werkzeug:31.15.194.157 - - [21/Jun/2018 11:34:47] "GET /letters HTTP/1.1" 200 -
+INFO:werkzeug:31.15.194.157 - - [21/Jun/2018 11:34:47] "GET /reduce_functions HTTP/1.1" 200 -
+INFO:werkzeug:31.15.194.157 - - [21/Jun/2018 11:34:47] "GET /favicon.ico HTTP/1.1" 404 -

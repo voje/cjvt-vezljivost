@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <meta charset="utf-8">
+    <link rel=stylesheet type=text/css href="{{ url_for('static', filename='./lib/bootstrap/css/bootstrap.min.css') }}">
+    <link rel=stylesheet type=text/css href="{{ url_for('static', filename='style.css') }}">
+<head>
+    <title>Leksikon</title>
+</head>
+<body>
+    <div id=header>
+        <h2>Leksikon vezljivosti slovenskih glagolov</h2>
+        <div id=letters></div>
+    </div>
+    <div id=main-body>
+        <div id=left>
+            <div id=words></div>
+        </div>
+        <div id=main-content>
+            <div id=reduce-functions></div>
+            <div id=word-info>
+                <div id=word-info-left>
+                    <h3 id="chosen-one"></h3>
+                    <p><span id="n-frames"></span></p>
+                </div>
+                <div id="word-info-right">
+                    <!--button onclick="user_input_menu('new')">debug_button</button-->
+                </div>
+            </div>
+            <div id=frames-area></div>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='./lib/jquery.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='./lib/bootstrap/js/bootstrap.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

@@ -1,0 +1,16 @@
+<table>
+    <tr>
+        <td>{{ tid }}: </td>
+        <td>{{ token }}</td>
+    </tr>
+    <tr>
+        <td>Stavek: </td>
+        <td class="token-sentence">{% for token in sentence %}
+            <span title="{{ token[1] }}" class="{{ token[0] }}">{{ token[1]["word"] }}</span>
+        {% endfor %}</td>
+    </tr>
+    <tr>
+        <td>sense_ids: </td>
+        <td>{{ sense_ids }}</td>
+    </tr>
+</table>

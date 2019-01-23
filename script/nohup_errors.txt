@@ -1,0 +1,48 @@
+Traceback (most recent call last):
+  File "./flask_app/app.py", line 569, in <module>
+    process_kmeans=get_arg("process_kmeans")
+  File "/home/kristjan/git/diploma/script/venv/lib/python3.5/site-packages/valency/val_struct.py", line 228, in process_after_read
+    self.gen_sorted_words()
+  File "/home/kristjan/git/diploma/script/venv/lib/python3.5/site-packages/valency/val_struct.py", line 269, in gen_sorted_words
+    lst, key=lambda x: x[0])
+  File "/home/kristjan/git/diploma/script/venv/lib/python3.5/site-packages/valency/k_utils.py", line 94, in slo_bucket_sort
+    bins = list_to_bins(words, idx)
+  File "/home/kristjan/git/diploma/script/venv/lib/python3.5/site-packages/valency/k_utils.py", line 78, in list_to_bins
+    bins[alph_score(word, idx)].append(word)
+  File "/home/kristjan/git/diploma/script/venv/lib/python3.5/site-packages/valency/k_utils.py", line 73, in alph_score
+    return slo_bucket_sort_alphabet.get(kword[idx]) or 0
+KeyboardInterrupt
+Error in atexit._run_exitfuncs:
+Traceback (most recent call last):
+  File "/home/kristjan/git/diploma/script/venv/lib/python3.5/site-packages/pymongo/periodic_executor.py", line 96, in join
+    self._thread.join(timeout)
+  File "/usr/lib/python3.5/threading.py", line 1058, in join
+    self._wait_for_tstate_lock(timeout=max(timeout, 0))
+  File "/usr/lib/python3.5/threading.py", line 1070, in _wait_for_tstate_lock
+    elif lock.acquire(block, timeout):
+KeyboardInterrupt
+./autostart.sh: line 67: 32517 Terminated              python3 ./flask_app/app.py "$args"
+[2018-08-13 14:32:17,336] ERROR in app: Exception on /words/test [GET]
+Traceback (most recent call last):
+  File "/home/kristjan/git/diploma/script/venv/lib/python3.5/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/kristjan/git/diploma/script/venv/lib/python3.5/site-packages/flask/app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/kristjan/git/diploma/script/venv/lib/python3.5/site-packages/flask_cors/extension.py", line 161, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/home/kristjan/git/diploma/script/venv/lib/python3.5/site-packages/flask/app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/kristjan/git/diploma/script/venv/lib/python3.5/site-packages/flask/_compat.py", line 33, in reraise
+    raise value
+  File "/home/kristjan/git/diploma/script/venv/lib/python3.5/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/kristjan/git/diploma/script/venv/lib/python3.5/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "./flask_app/app.py", line 322, in get_words
+    if letter not in vallex.alph_index:
+AttributeError: 'Vallex' object has no attribute 'alph_index'
+Traceback (most recent call last):
+  File "./flask_app/app.py", line 5, in <module>
+    from valency import k_utils
+ImportError: No module named 'valency'
+127.0.0.1:26633: [Errno 111] Connection refused

@@ -1,0 +1,5 @@
+{% for l in letters %}
+    <span>
+        <a href="javascript:get_words('{{ l[0] }}')">{{ l[0]|upper + "(" + l[1]|string + ")" }}</a>
+    </span>
+{% endfor %}
